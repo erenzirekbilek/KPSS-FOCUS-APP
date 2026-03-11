@@ -1,49 +1,75 @@
 // app/tests/questions.tsx
 
 import { Ionicons } from "@expo/vector-icons";
+import * as Haptics from "expo-haptics";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import React, {
   ReactElement,
+  useCallback,
   useContext,
   useEffect,
+  useMemo,
   useRef,
   useState,
 } from "react";
 import {
-  ActivityIndicator,
+  Animated,
+  FlatList,
+  LayoutAnimation,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
+  UIManager,
   View,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemeContext } from "../../context/ThemeContext";
 import { db } from "../../services/database";
+import { playSound, preloadSounds } from "../../utils/soundManager";
 
+// Android için LayoutAnimation'ı etkinleştir
+if (
+  Platform.OS === "android" &&
+  UIManager.setLayoutAnimationEnabledExperimental
+) {
+  UIManager.setLayoutAnimationEnabledExperimental(true);
+}
+
+// ─── Tema Renkleri ───────────────────────────────────────────────────────────
 const LightMode = {
   bg: "#f8f9fa",
   bgSecondary: "#ffffff",
   text: "#1a1a1a",
-  textSecondary: "#555",
+  textSecondary: "#6b7280",
   border: "#e5e7eb",
   accent: "#2563eb",
   accentLight: "#dbeafe",
   correct: "#10b981",
   incorrect: "#ef4444",
+  skeletonBase: "#e5e7eb",
+  skeletonHighlight: "#f3f4f6",
+  gradientFrom: "rgba(248,249,250,0)",
+  gradientTo: "rgba(248,249,250,1)",
 };
 
 const DarkMode = {
-  bg: "#000000",
-  bgSecondary: "#121212",
-  text: "#ffffff",
-  textSecondary: "#888",
-  border: "#1c1c1c",
+  bg: "#0f0f0f",
+  bgSecondary: "#1a1a1a",
+  text: "#f9fafb",
+  textSecondary: "#9ca3af",
+  border: "#2a2a2a",
   accent: "#00E5FF",
   accentLight: "rgba(0, 229, 255, 0.1)",
   correct: "#10b981",
   incorrect: "#ef4444",
+  skeletonBase: "#1a1a1a",
+  skeletonHighlight: "#2a2a2a",
+  gradientFrom: "rgba(15,15,15,0)",
+  gradientTo: "rgba(15,15,15,1)",
 };
 
+// ─── Tipler ──────────────────────────────────────────────────────────────────
 interface Question {
   id: number;
   testId: number;
@@ -54,26 +80,118 @@ interface Question {
   explanation?: string;
 }
 
+interface AnswerRecord {
+  selectedAnswer: string;
+  isCorrect: boolean;
+}
+
+// ─── Skeleton Loader ─────────────────────────────────────────────────────────
+function SkeletonLoader({ colors }: { colors: typeof LightMode }) {
+  const opacity = useRef(new Animated.Value(0.4)).current;
+
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(opacity, {
+          toValue: 1,
+          duration: 700,
+          useNativeDriver: true,
+        }),
+        Animated.timing(opacity, {
+          toValue: 0.4,
+          duration: 700,
+          useNativeDriver: true,
+        }),
+      ]),
+    ).start();
+  }, [opacity]); // ✅ fixed: opacity eklendi
+
+  const box = (w: string | number, h: number, r = 8, mb = 0) => (
+    <Animated.View
+      style={{
+        width: w as any,
+        height: h,
+        borderRadius: r,
+        backgroundColor: colors.skeletonBase,
+        marginBottom: mb,
+        opacity,
+      }}
+    />
+  );
+
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: colors.bg,
+        padding: 20,
+        paddingTop: 60,
+      }}
+    >
+      {/* header */}
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginBottom: 28,
+        }}
+      >
+        {box(28, 28, 14)}
+        {box("50%", 18, 8)}
+        {box(60, 28, 14)}
+      </View>
+      {/* progress */}
+      {box("100%", 6, 3, 20)}
+      {/* soru kartı */}
+      {box("100%", 130, 16, 24)}
+      {/* şıklar */}
+      {[0, 1, 2, 3].map((i) => (
+        <Animated.View
+          key={i}
+          style={{
+            width: "100%",
+            height: 58,
+            borderRadius: 12,
+            backgroundColor: colors.skeletonBase,
+            marginBottom: 10,
+            opacity,
+          }}
+        />
+      ))}
+    </View>
+  );
+}
+
+// ─── Ana Bileşen ─────────────────────────────────────────────────────────────
 export default function Questions(): ReactElement {
+  useEffect(() => {
+    preloadSounds();
+  }, []);
+
   const router = useRouter();
   const { testId, testTitle } = useLocalSearchParams();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [answered, setAnswered] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showResults, setShowResults] = useState(false);
+  const [answerMap, setAnswerMap] = useState<Record<number, AnswerRecord>>({});
 
-  // Doğru / yanlış sayaçları — ref kullanıyoruz ki async içinde stale closure olmadan erişebilelim
   const correctCountRef = useRef(0);
   const wrongCountRef = useRef(0);
-  // UI güncellemesi için state versiyonları
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+
+  // Seçenek animasyonu için
+  const shakeAnim = useRef(new Animated.Value(0)).current;
+  const scaleAnim = useRef(new Animated.Value(1)).current;
 
   const theme = useContext(ThemeContext);
   const insets = useSafeAreaInsets();
   const colors = theme?.isDark ? DarkMode : LightMode;
+
+  const currentRecord = answerMap[currentQuestion] ?? null;
+  const selectedAnswer = currentRecord?.selectedAnswer ?? null;
+  const answered = currentRecord !== null;
 
   useEffect(() => {
     const loadQuestions = async () => {
@@ -81,8 +199,6 @@ export default function Questions(): ReactElement {
         await db.initialize();
         const questionsData = await db.getQuestionsByTest(Number(testId));
         setQuestions(questionsData);
-
-        // Daha önce kaldığı yerden devam et (tamamlanmamışsa)
         const progress = await db.getProgress(Number(testId));
         if (
           progress &&
@@ -104,20 +220,156 @@ export default function Questions(): ReactElement {
     loadQuestions();
   }, [testId]);
 
-  if (isLoading) {
-    return (
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: colors.bg,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <ActivityIndicator color={colors.accent} size="large" />
-      </View>
+  // ── Seçenek listesi memoized ─────────────────────────────────────────────
+  const question = questions[currentQuestion];
+
+  const questionOptions = useMemo(() => {
+    if (!question) return [];
+    const parsed =
+      typeof question.options === "string"
+        ? JSON.parse(question.options)
+        : question.options;
+    return Object.entries(parsed).map(([key, value]) => ({
+      id: key,
+      text: value as string,
+      correct: key === question.correctAnswer,
+    }));
+  }, [question]);
+
+  // ── Sallama animasyonu (yanlış cevap) ────────────────────────────────────
+  const triggerShake = useCallback(() => {
+    Animated.sequence([
+      Animated.timing(shakeAnim, {
+        toValue: 8,
+        duration: 60,
+        useNativeDriver: true,
+      }),
+      Animated.timing(shakeAnim, {
+        toValue: -8,
+        duration: 60,
+        useNativeDriver: true,
+      }),
+      Animated.timing(shakeAnim, {
+        toValue: 6,
+        duration: 50,
+        useNativeDriver: true,
+      }),
+      Animated.timing(shakeAnim, {
+        toValue: -6,
+        duration: 50,
+        useNativeDriver: true,
+      }),
+      Animated.timing(shakeAnim, {
+        toValue: 0,
+        duration: 50,
+        useNativeDriver: true,
+      }),
+    ]).start();
+  }, [shakeAnim]); // ✅ fixed: shakeAnim eklendi
+
+  // ── Pop animasyonu (doğru cevap) ─────────────────────────────────────────
+  const triggerPop = useCallback(() => {
+    Animated.sequence([
+      Animated.timing(scaleAnim, {
+        toValue: 1.04,
+        duration: 100,
+        useNativeDriver: true,
+      }),
+      Animated.timing(scaleAnim, {
+        toValue: 1,
+        duration: 100,
+        useNativeDriver: true,
+      }),
+    ]).start();
+  }, [scaleAnim]); // ✅ fixed: scaleAnim eklendi
+
+  // ── Cevap seçimi ─────────────────────────────────────────────────────────
+  const handleSelectAnswer = async (optionId: string) => {
+    if (answered) return;
+
+    const isCorrect = optionId === question.correctAnswer;
+
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+
+    if (isCorrect) {
+      correctCountRef.current += 1;
+      setCorrectCount(correctCountRef.current);
+      playSound("correct");
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      triggerPop();
+    } else {
+      wrongCountRef.current += 1;
+      setWrongCount(wrongCountRef.current);
+      playSound("wrong");
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      triggerShake();
+    }
+
+    setAnswerMap((prev) => ({
+      ...prev,
+      [currentQuestion]: { selectedAnswer: optionId, isCorrect },
+    }));
+
+    await db.saveProgress(
+      Number(testId),
+      currentQuestion,
+      false,
+      correctCountRef.current,
+      wrongCountRef.current,
     );
-  }
+  };
+
+  // ── İleri ────────────────────────────────────────────────────────────────
+  const handleNext = async () => {
+    if (currentQuestion < questions.length - 1) {
+      playSound("click");
+      Haptics.selectionAsync();
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      const nextIndex = currentQuestion + 1;
+      setCurrentQuestion(nextIndex);
+      await db.saveProgress(
+        Number(testId),
+        nextIndex,
+        false,
+        correctCountRef.current,
+        wrongCountRef.current,
+      );
+    }
+  };
+
+  // ── Geri ─────────────────────────────────────────────────────────────────
+  const handlePrevious = () => {
+    if (currentQuestion > 0) {
+      playSound("click");
+      Haptics.selectionAsync();
+      LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+      setCurrentQuestion(currentQuestion - 1);
+    }
+  };
+
+  // ── Soru paletinden seç ──────────────────────────────────────────────────
+  const handleJumpToQuestion = (index: number) => {
+    playSound("click");
+    Haptics.selectionAsync();
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setCurrentQuestion(index);
+  };
+
+  // ── Bitir ─────────────────────────────────────────────────────────────────
+  const handleFinish = async () => {
+    await db.saveProgress(
+      Number(testId),
+      questions.length - 1,
+      true,
+      correctCountRef.current,
+      wrongCountRef.current,
+    );
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+    setShowResults(true);
+  };
+
+  // ─── Yükleniyor ──────────────────────────────────────────────────────────
+  if (isLoading) return <SkeletonLoader colors={colors} />;
 
   if (questions.length === 0) {
     return (
@@ -134,13 +386,12 @@ export default function Questions(): ReactElement {
     );
   }
 
-  // ===================== SONUÇ EKRANI =====================
+  // ─── Sonuç Ekranı ────────────────────────────────────────────────────────
   if (showResults) {
     const total = questions.length;
-    const answered_ = correctCountRef.current + wrongCountRef.current;
+    const answeredCount = correctCountRef.current + wrongCountRef.current;
     const scorePercent =
       total > 0 ? Math.round((correctCountRef.current / total) * 100) : 0;
-
     const scoreColor =
       scorePercent >= 70
         ? colors.correct
@@ -158,7 +409,6 @@ export default function Questions(): ReactElement {
           }}
           showsVerticalScrollIndicator={false}
         >
-          {/* Başlık */}
           <Text
             style={{
               color: colors.textSecondary,
@@ -181,7 +431,7 @@ export default function Questions(): ReactElement {
             {testTitle}
           </Text>
 
-          {/* Büyük skor dairesi */}
+          {/* Skor dairesi */}
           <View style={{ alignItems: "center", marginBottom: 36 }}>
             <View
               style={{
@@ -212,124 +462,69 @@ export default function Questions(): ReactElement {
             </View>
           </View>
 
-          {/* İstatistik kartları */}
+          {/* Stat kartları */}
           <View style={{ flexDirection: "row", gap: 12, marginBottom: 16 }}>
-            {/* Doğru */}
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.bgSecondary,
-                borderRadius: 16,
-                padding: 20,
-                alignItems: "center",
-                borderWidth: 1,
-                borderColor: colors.correct + "55",
-              }}
-            >
-              <Ionicons
-                name="checkmark-circle"
-                size={32}
-                color={colors.correct}
-              />
-              <Text
+            {[
+              {
+                icon: "checkmark-circle",
+                color: colors.correct,
+                value: correctCountRef.current,
+                label: "Doğru",
+              },
+              {
+                icon: "close-circle",
+                color: colors.incorrect,
+                value: wrongCountRef.current,
+                label: "Yanlış",
+              },
+              {
+                icon: "remove-circle-outline",
+                color: colors.textSecondary,
+                value: total - answeredCount,
+                label: "Boş",
+              },
+            ].map((item) => (
+              <View
+                key={item.label}
                 style={{
-                  color: colors.correct,
-                  fontSize: 32,
-                  fontWeight: "900",
-                  marginTop: 8,
+                  flex: 1,
+                  backgroundColor: colors.bgSecondary,
+                  borderRadius: 16,
+                  padding: 20,
+                  alignItems: "center",
+                  borderWidth: 1,
+                  borderColor: item.color + "55",
                 }}
               >
-                {correctCountRef.current}
-              </Text>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 12,
-                  marginTop: 2,
-                }}
-              >
-                Doğru
-              </Text>
-            </View>
-
-            {/* Yanlış */}
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.bgSecondary,
-                borderRadius: 16,
-                padding: 20,
-                alignItems: "center",
-                borderWidth: 1,
-                borderColor: colors.incorrect + "55",
-              }}
-            >
-              <Ionicons
-                name="close-circle"
-                size={32}
-                color={colors.incorrect}
-              />
-              <Text
-                style={{
-                  color: colors.incorrect,
-                  fontSize: 32,
-                  fontWeight: "900",
-                  marginTop: 8,
-                }}
-              >
-                {wrongCountRef.current}
-              </Text>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 12,
-                  marginTop: 2,
-                }}
-              >
-                Yanlış
-              </Text>
-            </View>
-
-            {/* Boş */}
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: colors.bgSecondary,
-                borderRadius: 16,
-                padding: 20,
-                alignItems: "center",
-                borderWidth: 1,
-                borderColor: colors.border,
-              }}
-            >
-              <Ionicons
-                name="remove-circle-outline"
-                size={32}
-                color={colors.textSecondary}
-              />
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 32,
-                  fontWeight: "900",
-                  marginTop: 8,
-                }}
-              >
-                {total - answered_}
-              </Text>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 12,
-                  marginTop: 2,
-                }}
-              >
-                Boş
-              </Text>
-            </View>
+                <Ionicons
+                  name={item.icon as any}
+                  size={32}
+                  color={item.color}
+                />
+                <Text
+                  style={{
+                    color: item.color,
+                    fontSize: 32,
+                    fontWeight: "900",
+                    marginTop: 8,
+                  }}
+                >
+                  {item.value}
+                </Text>
+                <Text
+                  style={{
+                    color: colors.textSecondary,
+                    fontSize: 12,
+                    marginTop: 2,
+                  }}
+                >
+                  {item.label}
+                </Text>
+              </View>
+            ))}
           </View>
 
-          {/* Net bilgisi */}
+          {/* Net / Toplam / Başarı */}
           <View
             style={{
               backgroundColor: colors.bgSecondary,
@@ -342,81 +537,53 @@ export default function Questions(): ReactElement {
               justifyContent: "space-around",
             }}
           >
-            <View style={{ alignItems: "center" }}>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 11,
-                  fontWeight: "700",
-                  letterSpacing: 1,
-                }}
-              >
-                TOPLAM SORU
-              </Text>
-              <Text
-                style={{
-                  color: colors.text,
-                  fontSize: 24,
-                  fontWeight: "900",
-                  marginTop: 4,
-                }}
-              >
-                {total}
-              </Text>
-            </View>
-            <View style={{ width: 1, backgroundColor: colors.border }} />
-            <View style={{ alignItems: "center" }}>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 11,
-                  fontWeight: "700",
-                  letterSpacing: 1,
-                }}
-              >
-                NET
-              </Text>
-              <Text
-                style={{
-                  color: scoreColor,
-                  fontSize: 24,
-                  fontWeight: "900",
-                  marginTop: 4,
-                }}
-              >
-                {(correctCountRef.current - wrongCountRef.current / 4).toFixed(
-                  2,
+            {[
+              { label: "TOPLAM SORU", value: total, color: colors.text },
+              {
+                label: "NET",
+                value: (
+                  correctCountRef.current -
+                  wrongCountRef.current / 4
+                ).toFixed(2),
+                color: scoreColor,
+              },
+              { label: "BAŞARI", value: `%${scorePercent}`, color: scoreColor },
+            ].map((item, i) => (
+              <React.Fragment key={item.label}>
+                {i > 0 && (
+                  <View style={{ width: 1, backgroundColor: colors.border }} />
                 )}
-              </Text>
-            </View>
-            <View style={{ width: 1, backgroundColor: colors.border }} />
-            <View style={{ alignItems: "center" }}>
-              <Text
-                style={{
-                  color: colors.textSecondary,
-                  fontSize: 11,
-                  fontWeight: "700",
-                  letterSpacing: 1,
-                }}
-              >
-                BAŞARI
-              </Text>
-              <Text
-                style={{
-                  color: scoreColor,
-                  fontSize: 24,
-                  fontWeight: "900",
-                  marginTop: 4,
-                }}
-              >
-                %{scorePercent}
-              </Text>
-            </View>
+                <View style={{ alignItems: "center" }}>
+                  <Text
+                    style={{
+                      color: colors.textSecondary,
+                      fontSize: 11,
+                      fontWeight: "700",
+                      letterSpacing: 1,
+                    }}
+                  >
+                    {item.label}
+                  </Text>
+                  <Text
+                    style={{
+                      color: item.color,
+                      fontSize: 24,
+                      fontWeight: "900",
+                      marginTop: 4,
+                    }}
+                  >
+                    {item.value}
+                  </Text>
+                </View>
+              </React.Fragment>
+            ))}
           </View>
 
-          {/* Butonlar */}
           <TouchableOpacity
-            onPress={() => router.back()}
+            onPress={() => {
+              playSound("click");
+              router.back();
+            }}
             style={{
               backgroundColor: colors.accent,
               borderRadius: 14,
@@ -432,15 +599,17 @@ export default function Questions(): ReactElement {
 
           <TouchableOpacity
             onPress={async () => {
-              // Sıfırla ve baştan başla
+              playSound("click");
               await db.resetProgress(Number(testId));
               correctCountRef.current = 0;
               wrongCountRef.current = 0;
               setCorrectCount(0);
               setWrongCount(0);
               setCurrentQuestion(0);
-              setSelectedAnswer(null);
-              setAnswered(false);
+              setAnswerMap({});
+              LayoutAnimation.configureNext(
+                LayoutAnimation.Presets.easeInEaseOut,
+              );
               setShowResults(false);
             }}
             style={{
@@ -463,83 +632,7 @@ export default function Questions(): ReactElement {
     );
   }
 
-  // ===================== SORU EKRANI =====================
-  const question = questions[currentQuestion];
-
-  const parsedOptions =
-    typeof question.options === "string"
-      ? JSON.parse(question.options)
-      : question.options;
-
-  const questionOptions = Object.entries(parsedOptions).map(([key, value]) => ({
-    id: key,
-    text: value as string,
-    correct: key === question.correctAnswer,
-  }));
-
-  const handleSelectAnswer = async (optionId: string) => {
-    if (answered) return;
-
-    const isCorrect = optionId === question.correctAnswer;
-
-    if (isCorrect) {
-      correctCountRef.current += 1;
-      setCorrectCount(correctCountRef.current);
-    } else {
-      wrongCountRef.current += 1;
-      setWrongCount(wrongCountRef.current);
-    }
-
-    setSelectedAnswer(optionId);
-    setAnswered(true);
-
-    // Her cevaplandığında anlık kaydet
-    await db.saveProgress(
-      Number(testId),
-      currentQuestion,
-      false,
-      correctCountRef.current,
-      wrongCountRef.current,
-    );
-  };
-
-  const handleNext = async () => {
-    if (currentQuestion < questions.length - 1) {
-      const nextIndex = currentQuestion + 1;
-      setCurrentQuestion(nextIndex);
-      setSelectedAnswer(null);
-      setAnswered(false);
-      // Bir sonraki soruya geçişi kaydet
-      await db.saveProgress(
-        Number(testId),
-        nextIndex,
-        false,
-        correctCountRef.current,
-        wrongCountRef.current,
-      );
-    }
-  };
-
-  const handlePrevious = () => {
-    if (currentQuestion > 0) {
-      setCurrentQuestion(currentQuestion - 1);
-      setSelectedAnswer(null);
-      setAnswered(false);
-    }
-  };
-
-  const handleFinish = async () => {
-    // Testi tamamlandı olarak kaydet
-    await db.saveProgress(
-      Number(testId),
-      questions.length - 1,
-      true,
-      correctCountRef.current,
-      wrongCountRef.current,
-    );
-    setShowResults(true);
-  };
-
+  // ─── Soru Ekranı ─────────────────────────────────────────────────────────
   const isWrong = answered && selectedAnswer !== question.correctAnswer;
   const progressPercent = Math.round(
     ((currentQuestion + 1) / questions.length) * 100,
@@ -551,7 +644,7 @@ export default function Questions(): ReactElement {
         contentContainerStyle={{ paddingTop: insets.top, paddingBottom: 150 }}
         showsVerticalScrollIndicator={false}
       >
-        {/* --- HEADER --- */}
+        {/* ── HEADER ── */}
         <View
           style={{
             flexDirection: "row",
@@ -576,7 +669,6 @@ export default function Questions(): ReactElement {
           >
             {testTitle}
           </Text>
-          {/* Canlı D/Y sayacı */}
           <View style={{ flexDirection: "row", gap: 6 }}>
             <View
               style={{
@@ -617,7 +709,7 @@ export default function Questions(): ReactElement {
           </View>
         </View>
 
-        {/* --- PROGRESS BAR --- */}
+        {/* ── PROGRESS BAR ── */}
         <View style={{ paddingHorizontal: 20, marginBottom: 20 }}>
           <View
             style={{
@@ -644,9 +736,9 @@ export default function Questions(): ReactElement {
           </View>
           <View
             style={{
-              height: 4,
+              height: 5,
               backgroundColor: colors.border,
-              borderRadius: 2,
+              borderRadius: 3,
             }}
           >
             <View
@@ -654,95 +746,109 @@ export default function Questions(): ReactElement {
                 height: "100%",
                 width: `${progressPercent}%`,
                 backgroundColor: colors.accent,
-                borderRadius: 2,
+                borderRadius: 3,
               }}
             />
           </View>
-        </View>
 
-        {/* --- QUESTION CARD --- */}
-        <View
-          style={{
-            marginHorizontal: 20,
-            backgroundColor: colors.bgSecondary,
-            borderRadius: 16,
-            padding: 20,
-            borderWidth: 1,
-            borderColor: colors.border,
-          }}
-        >
-          <Text
-            style={{
-              color: colors.textSecondary,
-              fontSize: 12,
-              fontWeight: "700",
-              marginBottom: 12,
-            }}
-          >
-            SORU {currentQuestion + 1}
-          </Text>
-
-          <Text
-            style={{
-              color: colors.text,
-              fontSize: 18,
-              fontWeight: "600",
-              lineHeight: 26,
-              marginBottom: answered && isWrong ? 15 : 5,
-            }}
-          >
-            {question.question}
-          </Text>
-
-          {answered && isWrong && question.explanation && (
-            <View
-              style={{
-                flexDirection: "row",
-                backgroundColor: theme?.isDark
-                  ? "rgba(239,68,68,0.1)"
-                  : "#fef2f2",
-                padding: 15,
-                borderRadius: 12,
-                marginTop: 10,
-                borderWidth: 1,
-                borderColor: "rgba(239,68,68,0.3)",
-              }}
-            >
-              <Ionicons
-                name="information-circle"
-                size={22}
-                color={colors.incorrect}
-                style={{ marginRight: 10 }}
-              />
-              <View style={{ flex: 1 }}>
-                <Text
+          {/* ── SORU PALETİ (yatay kaydırılabilir FlatList) ── */}
+          <FlatList
+            horizontal
+            data={questions}
+            keyExtractor={(_, i) => String(i)}
+            showsHorizontalScrollIndicator={false}
+            style={{ marginTop: 10 }}
+            contentContainerStyle={{ gap: 4 }}
+            renderItem={({ index }) => {
+              const rec = answerMap[index];
+              const isCurrent = index === currentQuestion;
+              return (
+                <TouchableOpacity
+                  onPress={() => handleJumpToQuestion(index)}
                   style={{
-                    color: colors.incorrect,
-                    fontSize: 14,
-                    fontWeight: "bold",
-                    marginBottom: 4,
+                    minWidth: 28,
+                    height: 28,
+                    paddingHorizontal: 6,
+                    borderRadius: 8,
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: isCurrent
+                      ? colors.accent
+                      : rec
+                        ? rec.isCorrect
+                          ? colors.correct
+                          : colors.incorrect
+                        : colors.bgSecondary,
+                    borderWidth: 1,
+                    borderColor: isCurrent
+                      ? colors.accent
+                      : rec
+                        ? "transparent"
+                        : colors.border,
                   }}
                 >
-                  Çözüm Bilgisi:
-                </Text>
-                <Text
-                  style={{ color: colors.text, fontSize: 13, lineHeight: 20 }}
-                >
-                  {question.explanation}
-                </Text>
-              </View>
-            </View>
-          )}
+                  <Text
+                    style={{
+                      fontSize: 10,
+                      fontWeight: "700",
+                      color: isCurrent || rec ? "#fff" : colors.textSecondary,
+                    }}
+                  >
+                    {index + 1}
+                  </Text>
+                </TouchableOpacity>
+              );
+            }}
+          />
         </View>
 
-        {/* --- OPTIONS --- */}
-        <View style={{ paddingHorizontal: 20, marginTop: 25 }}>
+        {/* ── SORU KARTI ── */}
+        <Animated.View
+          style={{
+            marginHorizontal: 20,
+            transform: [{ translateX: shakeAnim }, { scale: scaleAnim }],
+          }}
+        >
+          <View
+            style={{
+              backgroundColor: colors.bgSecondary,
+              borderRadius: 16,
+              padding: 20,
+              borderWidth: 1,
+              borderColor: colors.border,
+            }}
+          >
+            <Text
+              style={{
+                color: colors.textSecondary,
+                fontSize: 12,
+                fontWeight: "700",
+                marginBottom: 12,
+              }}
+            >
+              SORU {currentQuestion + 1}
+            </Text>
+            <Text
+              style={{
+                color: colors.text,
+                fontSize: 18,
+                fontWeight: "600",
+                lineHeight: 26,
+              }}
+            >
+              {question.question}
+            </Text>
+          </View>
+        </Animated.View>
+
+        {/* ── ŞIKLAR ── */}
+        <View style={{ paddingHorizontal: 20, marginTop: 20 }}>
           <Text
             style={{
               color: colors.textSecondary,
               fontSize: 12,
               fontWeight: "bold",
-              marginBottom: 15,
+              marginBottom: 12,
             }}
           >
             ŞIKLAR
@@ -753,11 +859,20 @@ export default function Questions(): ReactElement {
             const showCorrect = answered && option.correct;
             const showWrong = answered && isSelected && !option.correct;
 
+            const borderColor = showCorrect
+              ? colors.correct
+              : showWrong
+                ? colors.incorrect
+                : isSelected
+                  ? colors.accent
+                  : colors.border;
+
             return (
               <TouchableOpacity
                 key={option.id}
                 onPress={() => handleSelectAnswer(option.id)}
                 disabled={answered}
+                activeOpacity={0.8}
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
@@ -769,28 +884,31 @@ export default function Questions(): ReactElement {
                       : colors.bgSecondary,
                   borderRadius: 12,
                   marginBottom: 10,
-                  borderWidth: 1,
-                  borderColor: isSelected ? colors.accent : colors.border,
+                  borderWidth: showCorrect && !isSelected ? 2 : 1,
+                  borderColor,
+                  opacity:
+                    answered && !isSelected && !option.correct ? 0.45 : 1,
                 }}
               >
                 <View
                   style={{
-                    width: 30,
-                    height: 30,
-                    borderRadius: 8,
+                    width: 32,
+                    height: 32,
+                    borderRadius: 9,
                     backgroundColor:
                       showCorrect || showWrong
-                        ? "rgba(255,255,255,0.2)"
+                        ? "rgba(255,255,255,0.22)"
                         : colors.border,
                     justifyContent: "center",
                     alignItems: "center",
-                    marginRight: 15,
+                    marginRight: 14,
                   }}
                 >
                   <Text
                     style={{
                       color: showCorrect || showWrong ? "#fff" : colors.text,
                       fontWeight: "bold",
+                      fontSize: 13,
                     }}
                   >
                     {option.id}
@@ -799,9 +917,10 @@ export default function Questions(): ReactElement {
                 <Text
                   style={{
                     color: showCorrect || showWrong ? "#fff" : colors.text,
-                    fontSize: 16,
+                    fontSize: 15,
                     fontWeight: "500",
                     flex: 1,
+                    lineHeight: 22,
                   }}
                 >
                   {option.text}
@@ -826,9 +945,82 @@ export default function Questions(): ReactElement {
             );
           })}
         </View>
+
+        {/* ── ÇÖZÜM BİLGİSİ — şıkların ALTINDA ── */}
+        {answered && isWrong && question.explanation && (
+          <View
+            style={{
+              marginHorizontal: 20,
+              marginTop: 8,
+              flexDirection: "row",
+              backgroundColor: theme?.isDark
+                ? "rgba(239,68,68,0.1)"
+                : "#fef2f2",
+              padding: 16,
+              borderRadius: 14,
+              borderWidth: 1,
+              borderColor: "rgba(239,68,68,0.3)",
+            }}
+          >
+            <Ionicons
+              name="information-circle"
+              size={22}
+              color={colors.incorrect}
+              style={{ marginRight: 10, marginTop: 1 }}
+            />
+            <View style={{ flex: 1 }}>
+              <Text
+                style={{
+                  color: colors.incorrect,
+                  fontSize: 14,
+                  fontWeight: "bold",
+                  marginBottom: 4,
+                }}
+              >
+                Çözüm Bilgisi
+              </Text>
+              <Text
+                style={{ color: colors.text, fontSize: 13, lineHeight: 20 }}
+              >
+                {question.explanation}
+              </Text>
+            </View>
+          </View>
+        )}
+
+        {/* Doğru cevap seçilince de kısa onay mesajı */}
+        {answered && !isWrong && (
+          <View
+            style={{
+              marginHorizontal: 20,
+              marginTop: 8,
+              flexDirection: "row",
+              alignItems: "center",
+              backgroundColor: theme?.isDark
+                ? "rgba(16,185,129,0.1)"
+                : "#f0fdf4",
+              padding: 14,
+              borderRadius: 14,
+              borderWidth: 1,
+              borderColor: "rgba(16,185,129,0.3)",
+            }}
+          >
+            <Ionicons
+              name="checkmark-circle"
+              size={20}
+              color={colors.correct}
+              style={{ marginRight: 10 }}
+            />
+            <Text
+              style={{ color: colors.correct, fontSize: 13, fontWeight: "600" }}
+            >
+              Doğru! Harika gidiyorsun.
+            </Text>
+          </View>
+        )}
       </ScrollView>
 
-      {/* --- FOOTER NAVIGATION --- */}
+      {/* ── FOOTER ── */}
       <View
         style={{
           position: "absolute",
@@ -836,7 +1028,7 @@ export default function Questions(): ReactElement {
           left: 0,
           right: 0,
           padding: 20,
-          paddingBottom: insets.bottom + 10,
+          paddingBottom: insets.bottom + 12,
           flexDirection: "row",
           backgroundColor: colors.bg,
           borderTopWidth: 1,
@@ -848,16 +1040,16 @@ export default function Questions(): ReactElement {
           disabled={currentQuestion === 0}
           style={{
             flex: 1,
-            height: 50,
+            height: 52,
             backgroundColor: colors.bgSecondary,
-            borderRadius: 12,
+            borderRadius: 14,
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
             marginRight: 10,
             borderWidth: 1,
             borderColor: colors.border,
-            opacity: currentQuestion === 0 ? 0.4 : 1,
+            opacity: currentQuestion === 0 ? 0.35 : 1,
           }}
         >
           <Ionicons name="arrow-back" size={20} color={colors.text} />
@@ -874,12 +1066,12 @@ export default function Questions(): ReactElement {
           }
           style={{
             flex: 2,
-            height: 50,
+            height: 52,
             backgroundColor:
               currentQuestion === questions.length - 1
                 ? colors.correct
                 : colors.accent,
-            borderRadius: 12,
+            borderRadius: 14,
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",

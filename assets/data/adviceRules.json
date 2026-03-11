@@ -1,0 +1,55 @@
+{
+  "rules": [
+    {
+      "id": "cold_start",
+      "priority": 100,
+      "condition": "totalSolved === 0",
+      "title": "Maraton Başlıyor! 🚀",
+      "desc": "Henüz test çözmedin. Bugün en sevdiğin konudan 10 soruyla motoru ısıtalım.",
+      "icon": "rocket-sharp",
+      "color": "#00E5FF"
+    },
+    {
+      "id": "exam_urgent",
+      "priority": 90,
+      "condition": "daysLeft <= 30",
+      "title": "Son Viraj! 🔥",
+      "desc": "Sınava az kaldı. Konu çalışmayı bırakıp her gün 1 genel deneme çözmelisin.",
+      "icon": "alert-circle",
+      "color": "#ef4444"
+    },
+    {
+      "id": "morning",
+      "priority": 80,
+      "condition": "hour < 11 && todaySolved === 0",
+      "title": "Günaydın Şampiyon! ☀️",
+      "desc": "Güne erken başlamak rakiplerin önüne geçmektir. İlk 20 sorunu çözelim mi?",
+      "icon": "sunny",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "weak_spot",
+      "priority": 70,
+      "condition": "hasWeakSubject === true",
+      "title": "Zayıf Halkayı Güçlendir 🛠️",
+      "desc": "{weakSubject} dersinde başarın düşük. Bugün buraya 2 seans ayırmalısın.",
+      "icon": "construct",
+      "color": "#fb923c"
+    },
+    {
+      "id": "goal_reached",
+      "priority": 60,
+      "condition": "todaySolved >= 50",
+      "title": "Harika Verim! ✅",
+      "desc": "Bugünkü tempon çok iyi. Bilgilerini tazelemek için kısa bir tekrar yapabilirsin.",
+      "icon": "trophy",
+      "color": "#22c55e"
+    }
+  ],
+  "default": {
+    "title": "Yola Devam! 🛣️",
+    "desc": "İstikrar KPSS'nin anahtarıdır. Bugün plana sadık kalarak ilerle.",
+    "icon": "walk",
+    "color": "#6366f1"
+  }
+}

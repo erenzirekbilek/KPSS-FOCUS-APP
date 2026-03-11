@@ -1,0 +1,1890 @@
+[
+  {
+    "id": 1,
+    "testId": 1,
+    "question": "Kaşgarlı Mahmut, Divanü Lügat-it Türk'te Türk adının anlamını 'Olgunluk Çağı' olarak açıklamıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kaşgarlı Mahmut, Türk dünyasının ilk sözlüğünde Türk adını 'Olgunluk Çağı' olarak tanımlamıştır."
+  },
+  {
+    "id": 2,
+    "testId": 1,
+    "question": "Türk adı, bir topluluk ismi olarak tarihte ilk kez Arap kaynaklarında geçmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Türk adı, bir topluluk ismi olarak tarihte ilk kez Çin yıllıklarında geçmektedir."
+  },
+  {
+    "id": 3,
+    "testId": 1,
+    "question": "Göktürkler, Memlükler ve Türkiye Cumhuriyeti Türk adını resmi devlet ismi olarak kullanan devletler arasındadır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Bu üç devlet, tarihte Türk adını resmi devlet ismi olarak kullanan yapılar arasındadır."
+  },
+  {
+    "id": 4,
+    "testId": 1,
+    "question": "Orta Asya'da Türklere ait en eski kültür merkezi Andronova kültürüdür.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Orta Asya'da Türklere ait en eski kültür merkezi Afanesyova kültürüdür."
+  },
+  {
+    "id": 5,
+    "testId": 1,
+    "question": "Türklerin dünyanın dört bir yanına dağılması, Türk tarihinin tek bir zaman ve mekânda incelenmesini imkânsız kılmaktadır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Orta Asya'dan yapılan göçler nedeniyle Türk tarihi bir bütün olarak incelenemez."
+  },
+  {
+    "id": 6,
+    "testId": 1,
+    "question": "Göçebe yaşam tarzı, Türklerin devlet kurma ve askeri becerilerini zayıflatmıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Konar-göçer yaşam, Türklerin devlet kurma ve askeri becerilerini güçlendirmiştir."
+  },
+  {
+    "id": 7,
+    "testId": 1,
+    "question": "Göçebe yaşam, Türk sanatında taşınabilir eşyalar üzerine işlenen hayvan üslubu (hayvan figürlü sanat) anlayışının doğmasına neden olmuştur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Göçebe yaşam tarzı, taşınabilir nesneler üzerinde işlenen hayvan figürlerini Türk sanatının temeli hâline getirmiştir."
+  },
+  {
+    "id": 8,
+    "testId": 1,
+    "question": "Eski Türk devletlerinde hükümdar öldüğünde tahta yalnızca en büyük oğul geçebilirdi.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kut anlayışına göre hükümdarın yönetme yetkisi tüm hanedana ait kabul edildiğinden her üye taht hakkına sahipti."
+  },
+  {
+    "id": 9,
+    "testId": 1,
+    "question": "Türklerde yönetme yetkisinin Tanrı tarafından verildiği inancına 'Kut' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kut, hükümdarın meşruiyetini ilahi bir kaynağa dayandırdığı Türk inanç sistemidir."
+  },
+  {
+    "id": 10,
+    "testId": 1,
+    "question": "Türk devletlerinin kısa ömürlü olmasının temel nedeni ekonomik krizler ve iklim şartlarının zorluğudur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kut anlayışı ve veraset sistemindeki belirsizlik, taht kavgalarına yol açarak devletlerin çabuk yıkılmasına neden olmuştur."
+  },
+  {
+    "id": 11,
+    "testId": 2,
+    "question": "İskitler (Sakalar), maden işlemeciliğindeki ustalıkları nedeniyle 'Bozkırın Kuyumcuları' olarak anılmaktadır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "İskitler, özellikle altın işlemeciliğindeki ustalıkları sayesinde bu unvanı kazanmıştır."
+  },
+  {
+    "id": 12,
+    "testId": 2,
+    "question": "Firdevsi'nin Şehnamesi'nde 'Afrasiyap' adıyla geçen ünlü İskit hükümdarı Attila'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Şehname'de Afrasiyap adıyla anılan kişi Attila değil, Türk kahramanı Alp Er Tunga'dır."
+  },
+  {
+    "id": 13,
+    "testId": 2,
+    "question": "Tarihte bilinen ilk kadın hükümdar İskitlerin (Sakaların) hükümdarı Tomris Hatun'dur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Tomris Hatun, dünya tarihindeki ilk kadın hükümdar olarak kabul edilir."
+  },
+  {
+    "id": 14,
+    "testId": 2,
+    "question": "Asya Hunlarının bilinen ilk hükümdarı Mete Han'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Asya Hun Devleti'nin bilinen ilk hükümdarı Mete Han değil, Teoman'dır (Tuman)."
+  },
+  {
+    "id": 15,
+    "testId": 2,
+    "question": "Oğuz Kağan Destanı'nda hayatı anlatılan Asya Hunlarının en ünlü hükümdarı Mete Han'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Mete Han, Asya Hunlarına en parlak dönemini yaşatmış ve Oğuz Kağan Destanı'na ilham olmuştur."
+  },
+  {
+    "id": 16,
+    "testId": 2,
+    "question": "Türk Kara Kuvvetleri'nin kuruluş tarihi olarak MÖ 209 kabul edilmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Mete Han'ın tahta çıkışı ve onlu askeri sistemi kurması, Türk Kara Kuvvetleri'nin resmi kuruluş tarihi olarak kabul edilir."
+  },
+  {
+    "id": 17,
+    "testId": 2,
+    "question": "Üzerinde yaşanılan toprağın kutsal vatan olduğu anlayışını ilk kez ortaya koyan hükümdar Mete Han'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Mete Han, toprağın milletin malı olduğunu ve bir karışının dahi feda edilemeyeceğini savunmuştur."
+  },
+  {
+    "id": 18,
+    "testId": 2,
+    "question": "Kavimler Göçü'nün Ortaçağ Avrupa'sına bilimsel/felsefi sonucu Rönesans'ın başlaması olmuştur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kavimler Göçü'nün Ortaçağ Avrupa'sındaki bilimsel/felsefi sonucu, kilisenin baskısına dayalı Skolastik felsefenin egemen olmasıdır."
+  },
+  {
+    "id": 19,
+    "testId": 2,
+    "question": "Kavimler Göçü, Ortaçağ Avrupa'sında merkezi krallıkların güçlenmesine yol açmıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kavimler Göçü, merkezi krallıkların zayıflamasına ve yerel güç sahiplerine dayalı Feodalite/Derebeylik sisteminin doğmasına neden olmuştur."
+  },
+  {
+    "id": 20,
+    "testId": 2,
+    "question": "Avrupa'da kurulan ilk Türk Devleti, Balamir önderliğindeki Avrupa Hun Devleti'dir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kavimler Göçü ile batıya giden Türk boyları Balamir önderliğinde Avrupa Hun Devleti'ni kurmuştur."
+  },
+  {
+    "id": 21,
+    "testId": 3,
+    "question": "Batılılar tarafından 'Tanrı'nın kırbacı' olarak anılan hükümdar Mete Han'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "'Tanrı'nın kırbacı' olarak anılan hükümdar Mete Han değil, Attila'dır."
+  },
+  {
+    "id": 22,
+    "testId": 3,
+    "question": "I. Göktürk Devleti'nin kurucusu Bumin Kağan'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Avar hakimiyetine son vererek I. Göktürk Devleti'ni kuran lider Bumin Kağan'dır."
+  },
+  {
+    "id": 23,
+    "testId": 3,
+    "question": "Türk tarihinde bağımsızlıkçı ilk isyanın lideri Kürşad'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Çin sarayını 40 askeriyle basan Kürşad, bağımsızlık mücadelesinin ilk büyük sembolüdür."
+  },
+  {
+    "id": 24,
+    "testId": 3,
+    "question": "II. Göktürk (Kutluk) Devleti, işgal altındayken bağımsızlık savaşıyla kurulduğu için Türkiye Cumhuriyeti'ne benzetilir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Esaretten kurtulup kendi öz devletini yeniden kurması nedeniyle Türkiye Cumhuriyeti'ne benzetilir."
+  },
+  {
+    "id": 25,
+    "testId": 3,
+    "question": "Orhun Abideleri'nde Bilge Kağan, devletin kurucusundan 'babam kağan' diye bahseder; bu kişi Kutluk Kağan (İlteriş Kağan)'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "İlteriş (Devleti derleyen) unvanını alan Kutluk Kağan, Göktürkleri yeniden canlandırmıştır."
+  },
+  {
+    "id": 26,
+    "testId": 3,
+    "question": "'Türk Bismarck'ı' olarak bilinen ünlü Göktürk veziri Nizamülmülk'tür.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "'Türk Bismarck'ı' olarak bilinen Göktürk veziri Nizamülmülk değil, Tonyukuk'tur."
+  },
+  {
+    "id": 27,
+    "testId": 3,
+    "question": "Uygurların en güçlü döneminin kağanı Moyen Çur Kağan'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Uygurlar en parlak ve en geniş sınırlarına Moyen Çur zamanında ulaşmışlardır."
+  },
+  {
+    "id": 28,
+    "testId": 3,
+    "question": "Türk tarihinde kitlesel anlamda yerleşik hayata geçiş ilk kez Göktürkler döneminde başlamıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kitlesel anlamda yerleşik hayata geçiş ilk kez Göktürkler'de değil, Uygurlar döneminde başlamıştır."
+  },
+  {
+    "id": 29,
+    "testId": 3,
+    "question": "Türk tarihinde vakıf uygulamasının ilk örneği Uygurlar'a aittir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Sosyal yardımlaşma ve yerleşik hayatın getirisi olan vakıf kurumu ilk kez Uygurlarda görülür."
+  },
+  {
+    "id": 30,
+    "testId": 3,
+    "question": "Tarım etkinliğinin kesin kanıtları orak, saban ve sulama kanallarıdır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Orak ve saban gibi aletler, o bölgede doğrudan üretim yapıldığının teknik ispatıdır."
+  },
+  {
+    "id": 31,
+    "testId": 4,
+    "question": "Hazarlar, tarihte Musevililiği kabul eden tek Türk devletidir ve günümüzde onların devamı Karaylar (Karaim Türkleri) olarak kabul edilir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Hazarlar Museviliği kabul eden tek Türk devletidir; Karaylar bu inancı günümüzde sürdürmektedir."
+  },
+  {
+    "id": 32,
+    "testId": 4,
+    "question": "Hazarların etkin olduğu 8. ve 9. yüzyıla batılılar 'Hazar Barış Çağı (Pax Chazarica)' adını vermiştir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Hazarların sağladığı huzur ortamı ticaretin gelişmesini sağlamış ve bu isimle anılmıştır."
+  },
+  {
+    "id": 33,
+    "testId": 4,
+    "question": "Hazar Denizi'ne ismini veren Türk topluluğu Peçeneklerdir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Hazar Denizi'ne ismini veren Türk topluluğu Peçenekler değil, Hazar Türkleridir."
+  },
+  {
+    "id": 34,
+    "testId": 4,
+    "question": "Sibirya'ya ismini veren Türk topluluğu Sibir/Sabar Türkleridir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Sibirya bölgesi adını bölgede hakimiyet kuran Sabar Türklerinden almaktadır."
+  },
+  {
+    "id": 35,
+    "testId": 4,
+    "question": "Hz. Osman döneminde İslam ordularını durdurup İslam'ın Kafkasya'ya yayılmasını engelleyen Türk devleti Göktürklerdir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "İslam ordularını Kafkasya'da durduran Türk devleti Göktürkler değil, Hazarlardır."
+  },
+  {
+    "id": 36,
+    "testId": 4,
+    "question": "Emeviler'e karşı mücadele ederek Orta Asya'nın Araplaşmasını ve İslam'ın yayılmasını engelleyen Türk devleti Türgişlerdir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Türgişler, 'Sulu Kağan' döneminde Emevilerle savaşarak Orta Asya'yı korumuşlardır."
+  },
+  {
+    "id": 37,
+    "testId": 4,
+    "question": "Kendi adına para bastıran ilk Türk hükümdarı Türgişlerden Baga Tarkan'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Bağımsızlık sembolü olarak kendi adına para bastıran ilk Türk kağanı Baga Tarkan'dır."
+  },
+  {
+    "id": 38,
+    "testId": 4,
+    "question": "İslam'ı kabul eden ilk Türk boyu Oğuzlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "İslam'ı kabul eden ilk Türk boyu Oğuzlar değil, 751 Talas Savaşı'nda Müslümanların yanında yer alan Karluklar'dır."
+  },
+  {
+    "id": 39,
+    "testId": 4,
+    "question": "Ötüken'i Moğollara teslim eden, Moğollara itaat eden ilk Türk boyu Kırgızlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Moğol hakimiyetine giren ilk Türk topluluğu Kırgızlar olmuştur."
+  },
+  {
+    "id": 40,
+    "testId": 4,
+    "question": "Günümüzde Moldova'da yaşayan Hristiyan Gagauz Türkleri Kuman boyundan gelmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Gagauzlar (Gök-Oğuzlar), Kuman boyundan değil, Hristiyan inancını benimsemiş bir Oğuz topluluğudur."
+  },
+  {
+    "id": 41,
+    "testId": 5,
+    "question": "Malazgirt Savaşı'nda Bizans ordusundan Selçuklu saflarına geçen Türk boyları Peçenekler ve Oğuzlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Savaş alanında soydaşlarını fark eden Peçenekler ve Uzlar (Oğuzlar) taraf değiştirerek zaferde rol oynamışlardır."
+  },
+  {
+    "id": 42,
+    "testId": 5,
+    "question": "Juan Juan adıyla da bilinen, İstanbul'u kuşatan Türk boyu Hunlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Juan Juan adıyla da bilinen ve İstanbul'u kuşatan Türk boyu Hunlar değil, Avarlardır."
+  },
+  {
+    "id": 43,
+    "testId": 5,
+    "question": "Almış Han zamanında İslam'ı kabul eden İtil (Volga) Bulgarları, ilk Türk-İslam devleti olarak tarihe geçmiştir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "İtil Bulgarları, Orta Asya dışındaki ilk Müslüman Türk devleti olarak tarihe geçmiştir."
+  },
+  {
+    "id": 44,
+    "testId": 5,
+    "question": "Dede Korkut Hikayeleri'nde Oğuzlarla savaşları anlatılan Türk boyu Kıpçaklar/Kumanlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kıpçakların Oğuzlarla mücadelesi Türk edebiyatının en önemli eserlerinden birine konu olmuştur."
+  },
+  {
+    "id": 45,
+    "testId": 5,
+    "question": "Hazar'ın kuzeyinden Avrupa'ya göç eden Türklerin asimile olmasının temel nedeni yeni göçlerle beslenememesi ve Hristiyanlığı kabul etmeleridir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Dini kimliğin değişmesi ve arkadan gelen Türk boylarıyla desteklenmemek milli benliğin kaybına yol açmıştır."
+  },
+  {
+    "id": 46,
+    "testId": 5,
+    "question": "Türkçede hükümdarın tahtı 'Örgin' olarak adlandırılır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Örgin, hükümdarın oturduğu ve siyasi otoriteyi temsil eden tahtın adıdır."
+  },
+  {
+    "id": 47,
+    "testId": 5,
+    "question": "Kuş tüyü ve değerli taşlarla süslenen, kağanların başlarına taktığı hükümranlık sembolüne 'Tuğ' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Bu süslemeye Tuğ değil, Kotuz/Sorguç denir."
+  },
+  {
+    "id": 48,
+    "testId": 5,
+    "question": "Eski Türklerde başkente 'Ordu' denirdi.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Hükümdarın ve ordunun bulunduğu yönetim merkezine 'Ordu' denirdi."
+  },
+  {
+    "id": 49,
+    "testId": 5,
+    "question": "Türklerde hükümdarın ekonomik gücünü ifade eden ve Tanrı bağışı kabul edilen kavram 'Üleş'tir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Üleş, Tanrı'nın rızkı artırması ve hükümdarın bunu halka paylaştırması yetkisidir."
+  },
+  {
+    "id": 50,
+    "testId": 5,
+    "question": "Türklerde hükümdar çocuklarına 'Şad' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Hükümdar çocuklarına Şad değil, 'Tigin' denir."
+  },
+  {
+    "id": 51,
+    "testId": 6,
+    "question": "İslamiyet öncesinde şehzadelerin eğitiminden sorumlu olan tecrübeli devlet adamlarına 'İnal/İnanç/Ataman' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Bu kişiler şehzadelerin öğretmeni ve danışmanı konumundaydı."
+  },
+  {
+    "id": 52,
+    "testId": 6,
+    "question": "Türklerde önemli kararların alındığı, boy beylerinin katıldığı siyasi meclise 'Kengeş' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Siyasi karar meclisine Kengeş değil, 'Kurultay/Toy' denir."
+  },
+  {
+    "id": 53,
+    "testId": 6,
+    "question": "Türklerde bilim insanlarının oluşturduğu danışma meclisine 'Kengeş' adı verilir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kengeş, fikir alışverişinde bulunulan danışma niteliğindeki meclistir."
+  },
+  {
+    "id": 54,
+    "testId": 6,
+    "question": "'Toygun', Kurultay/Toy'a katılma hakkı olan kişileri ifade eder.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kağan, Hatun, Şad ve Boy Beyleri gibi meclis üyelerine Toygun denir."
+  },
+  {
+    "id": 55,
+    "testId": 6,
+    "question": "Türklerde hem valilik hem de vergi toplama sorumluluğunu üstlenen görevliye 'Tudun' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Tudunlar, devletin mali ve idari işlerinden sorumlu yüksek görevlilerdir."
+  },
+  {
+    "id": 56,
+    "testId": 6,
+    "question": "Türklerde hakim-yargıç olarak görev yapanlara 'Buyruk' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Hakim-yargıç olarak görev yapanlara Buyruk değil, 'Yargucı' denir."
+  },
+  {
+    "id": 57,
+    "testId": 6,
+    "question": "Türklerde diplomatik görevleri yerine getiren elçilere 'Yalvaç' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Diplomatik görevleri yerine getiren temsilcilere Yalvaç denirdi."
+  },
+  {
+    "id": 58,
+    "testId": 6,
+    "question": "Türk toplumsal yapısında 'Oguş', devlet anlamına gelmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Oguş devlet anlamına gelmez; Türk sosyal yapısının temel taşı ve en küçük birimi olan aileyi ifade eder."
+  },
+  {
+    "id": 59,
+    "testId": 6,
+    "question": "Türklerde aileler birliği olan sülaleye 'Urug' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Oguşların birleşmesiyle daha geniş bir yapı olan sülale (Urug) oluşur."
+  },
+  {
+    "id": 60,
+    "testId": 6,
+    "question": "Türklerde boyların bir araya gelmesiyle oluşan siyasi topluluğa (millete) 'Budun' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Boyların bir araya gelmesiyle oluşan siyasi topluluğa Budun (Millet) denir."
+  },
+  {
+    "id": 61,
+    "testId": 7,
+    "question": "Türkçede devlet kavramını ifade etmek için 'İl' veya 'El' kelimeleri kullanılmıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "İl veya El, Türkçede devlet kavramını ifade eden kelimelerdir."
+  },
+  {
+    "id": 62,
+    "testId": 7,
+    "question": "Türklerde 'Balık', göl anlamına gelmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Balık göl anlamına gelmez; yerleşik şehir merkezlerine verilen isimdir. Beşbalık, Ordubalık buna örnek gösterilebilir."
+  },
+  {
+    "id": 63,
+    "testId": 7,
+    "question": "Kaşgarlı Mahmut'un 'Türk Hakanlarının Şehri' olarak tarif ettiği şehir Balasagun'dur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Balasagun şehri tarihsel önemi nedeniyle bu şekilde nitelendirilmiştir."
+  },
+  {
+    "id": 64,
+    "testId": 7,
+    "question": "Türkler çadıra 'Yurt/Keregü' adını verirdi.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Göçebe yaşamın vazgeçilmez evi olan çadırlara verilen isimdir."
+  },
+  {
+    "id": 65,
+    "testId": 7,
+    "question": "Türklerde kadının mülkiyetine ait olan, başlık benzeri maddi unsura 'Kalıng' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Evlilik sırasında kız tarafına verilen maddi bedeldir."
+  },
+  {
+    "id": 66,
+    "testId": 7,
+    "question": "Türklerde ilk kez para kullanan devlet Uygurlar'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Para kullanan ilk Türk devleti Uygurlar değil, Göktürklerdir."
+  },
+  {
+    "id": 67,
+    "testId": 7,
+    "question": "Türklerin bastırdığı madeni paralara 'Yarmak' adı verilirdi.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Türklerin kullandığı madeni paralara Yarmak adı verilirdi."
+  },
+  {
+    "id": 68,
+    "testId": 7,
+    "question": "Türklerde üzerinde resmi mühür bulunan ve ödeme aracı olarak kullanılan kumaş parçasına 'Çav' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Mühürlü kumaş paraya Çav değil, 'Böz/Kamdu' denir."
+  },
+  {
+    "id": 69,
+    "testId": 7,
+    "question": "Ecdadın ruhlarının koruyuculuğuna inanılan inanç sistemine 'Atalar Kültü/Animizm' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Ölmüş büyüklerin ruhlarının aileye yardım ettiğine dair köklü bir inançtır."
+  },
+  {
+    "id": 70,
+    "testId": 7,
+    "question": "Türkler etkileşim sonucunda Manihaizm, Budizm, Hristiyanlık ve Musevilik gibi dinleri benimsemiştir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Geniş coğrafyalara dağılan Türkler farklı kültürlerle temas ederek bu inançları benimsemiştir."
+  },
+  {
+    "id": 71,
+    "testId": 8,
+    "question": "Manihaizm, Uygurlarda mimari, resim ve minyatür sanatlarının gelişmesinde etkili olmuştur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Mani dini tapınak yapımını ve kitap süsleme sanatlarını zorunlu kılmıştır."
+  },
+  {
+    "id": 72,
+    "testId": 8,
+    "question": "Budizm, Uygurlarda halı dokumacılığı sanatının gelişmesinde etkili olmuştur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Budizm, halı dokumacılığı değil heykelcilik sanatının gelişmesinde etkili olmuştur."
+  },
+  {
+    "id": 73,
+    "testId": 8,
+    "question": "Türklerde 'Yuğ', düğün törenini ifade eder.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Yuğ düğün töreni değil, ölen kişinin ardından yapılan cenaze törenini ifade eder."
+  },
+  {
+    "id": 74,
+    "testId": 8,
+    "question": "Türklerde kişinin eşyalarıyla birlikte gömüldüğü yığma tepeler altındaki mezarlara 'Kurgan' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kurgan, Türklerin geleneksel mezar yapısıdır."
+  },
+  {
+    "id": 75,
+    "testId": 8,
+    "question": "İslam öncesi Türk inanç sisteminde ruhlarla iletişim kuran din adamlarına Şaman, Kam veya Baksı denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "İslam öncesi Türk inanç sisteminde ruhlarla iletişim kuran kişilerdir."
+  },
+  {
+    "id": 76,
+    "testId": 8,
+    "question": "Cenaze törenlerinde ölenin kahramanlıklarını ve duyulan acıyı anlatan şiirlere 'Sagu' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Sagu, ölen kişinin yaptıklarının anlatıldığı ağıt türündeki şiirlerdir."
+  },
+  {
+    "id": 77,
+    "testId": 8,
+    "question": "Manas Destanı Kırgızlara ait olup dünyanın en uzun destanı olma özelliğini taşır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kırgızlara ait olan Manas Destanı, dünyanın en uzun destanı olma özelliğini taşır."
+  },
+  {
+    "id": 78,
+    "testId": 8,
+    "question": "Türeyiş Destanı Göktürklere ait olup kutsal bir kurttan türemeyi anlatır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Türeyiş Destanı Göktürklere değil, Uygur Türklerine aittir."
+  },
+  {
+    "id": 79,
+    "testId": 8,
+    "question": "Asena adlı dişi kurttan yeniden çoğalmanın anlatıldığı destan Bozkurt Destanı'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Göktürklerin soylarının tükenme noktasına gelip bir dişi kurt sayesinde kurtulmalarını anlatır."
+  },
+  {
+    "id": 80,
+    "testId": 8,
+    "question": "Kutsal taşlarını Çin'e kaptıran Uygurların göçünü anlatan destan Ergenekon Destanı'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Bu göçü anlatan destan Ergenekon değil, Göç Destanı'dır."
+  },
+  {
+    "id": 81,
+    "testId": 9,
+    "question": "Bulgar devletinin kuruluşu hakkında bilgi veren destan Şan Kızı Destanı'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Bulgar Türklerinin tarihi geçmişini ve kuruluşunu aydınlatan edebi eserdir."
+  },
+  {
+    "id": 82,
+    "testId": 9,
+    "question": "Türkler özellikle dini gerekçelerle Arap ve İbrani alfabelerini kullanmıştır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Din değiştiren Türk boyları, ibadet dillerinin etkisiyle bu alfabeleri de benimsemiştir."
+  },
+  {
+    "id": 83,
+    "testId": 9,
+    "question": "I. Göktürkler dönemi hakkında bilgi veren biyografik yazıt Orhun Abideleri'dir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "I. Göktürkler dönemi hakkında bilgi veren yazıt Orhun Abideleri değil, Soğd alfabesiyle yazılan Bugut Yazıtı'dır."
+  },
+  {
+    "id": 84,
+    "testId": 9,
+    "question": "Orhun Kitabeleri, Türk tarihinin ilk siyasetnamesi olarak kabul edilmektedir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Devlet yönetimi ve hükümdarın halka karşı sorumluluklarını içermesi nedeniyle bu unvanı almıştır."
+  },
+  {
+    "id": 85,
+    "testId": 9,
+    "question": "Türk adının geçtiği ilk Türkçe yazılı belge Orhun Abideleri'dir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Göktürkler tarafından dikilen kitabelerde Türk kelimesi bir ulus ismi olarak ilk kez geçer."
+  },
+  {
+    "id": 86,
+    "testId": 9,
+    "question": "Uygur Kağanı Moyen Çur dönemi hakkında bilgi veren yazıt Sine Uşi/Moyen Çur Yazıtı'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Uygur Devleti'nin en parlak dönemini anlatan Orhun harfleriyle yazılmış kitabelerdir."
+  },
+  {
+    "id": 87,
+    "testId": 9,
+    "question": "Uygurlara ait fal kitabının adı 'Altun Yaruk'tur.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Uygurlardan kalma fal kitabının adı Altun Yaruk değil, 'Irg Bitig'dir."
+  },
+  {
+    "id": 88,
+    "testId": 9,
+    "question": "Türk töresinde 'Könilik' adalet, 'Tüzlük' ise eşitliği temsil eden kavramlardır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Törede Könilik adaleti, Tüzlük eşitliği temsil eden temel kavramlardır."
+  },
+  {
+    "id": 89,
+    "testId": 9,
+    "question": "Kağanla halk arasında sözlü sözleşmeye 'Töre' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Kağanla halk arasındaki sözlü sözleşmeye Töre değil, 'Tüz' denir."
+  },
+  {
+    "id": 90,
+    "testId": 9,
+    "question": "Türk ordusunda askere 'Sü' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Ordu anlamına gelen Sü kelimesi aynı zamanda askerler için de kullanılmıştır."
+  },
+  {
+    "id": 91,
+    "testId": 10,
+    "question": "Dünyanın en eski halısı kabul edilen Hun halısı Pazırık halısıdır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Altay dağlarındaki Pazırık Kurganı'ndan çıkarılan ve Hunlara ait olduğu saptanan eserdir."
+  },
+  {
+    "id": 92,
+    "testId": 10,
+    "question": "Türklerde maden işçiliğinin en mükemmel örneği kabul edilen eser, Esik Kurganı'nda bulunan 'Altın Elbiseli Adam'dır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Altından yapılmış bu zırh Türk maden sanatının zirvesi olarak kabul edilir."
+  },
+  {
+    "id": 93,
+    "testId": 10,
+    "question": "Türklerde çini sanatının ilk örneği Selçuklularda görülür.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Türklerde çini sanatının ilk örneği Selçuklularda değil, Uygurlarda görülür."
+  },
+  {
+    "id": 94,
+    "testId": 10,
+    "question": "Türklerde heykel sanatının en yaygın örneği, mezar başlarına dikilen 'Balbal' taş heykellerdir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Ölenin savaşta yendiği düşmanları simgeleyen taş heykellerdir."
+  },
+  {
+    "id": 95,
+    "testId": 10,
+    "question": "Türklerde ressama 'Nakkaş' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "Türklerde ressama Nakkaş değil, 'Bedizci' denir."
+  },
+  {
+    "id": 96,
+    "testId": 10,
+    "question": "Türklerde bilim insanlarına 'Keneşçi/Tayanç' denir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Devlet yönetiminde fikirlerine başvurulan, bilgi birikimi yüksek kişilerdir."
+  },
+  {
+    "id": 97,
+    "testId": 10,
+    "question": "12 Hayvanlı Türk Takvimi, Türklerin astronomiye ilgi duyduğunun kanıtıdır.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Bu takvimin yapılması ileri düzeyde gökyüzü gözlemi yapıldığını gösterir."
+  },
+  {
+    "id": 98,
+    "testId": 10,
+    "question": "Türklerde ilk kez örgün eğitim Göktürkler döneminde görülür.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": false,
+    "explanation": "İlk örgün eğitim Göktürkler'de değil, şehirleşen ve kütüphaneler kuran Uygurlar döneminde başlamıştır."
+  },
+  {
+    "id": 99,
+    "testId": 10,
+    "question": "Türklerde ilk kütüphane Uygurlar döneminde görülür.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Kağıdı ve matbaayı etkin kullanan Uygurlar, kitapları arşivleyerek ilk kütüphaneleri oluşturmuştur."
+  },
+  {
+    "id": 100,
+    "testId": 10,
+    "question": "Mumyacılık uygulaması, Türklerin tıp ve kimyayla uğraştıklarının ve ahiret anlayışına sahip olduklarının göstergesidir.",
+    "category": "İslamiyet Öncesi Türk Tarihi",
+    "correctAnswer": true,
+    "explanation": "Ölüyü ilaçlayarak saklama işlemi hem bilimsel bilgi gerektirir hem de tekrar canlanma inancını yansıtır."
+  },
+  {
+    "id": 101,
+    "testId": 11,
+    "question": "Büyük Selçuklu Devleti'nde Peçenekler ve Uzlar (Oğuzlar), 1071 Malazgirt Savaşı'nda Bizans'tan Selçuklu safına geçmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1071 Malazgirt Savaşı'nda Bizans ordusundaki Peçenek ve Uz birlikleri Selçuklu safına geçmiştir."
+  },
+  {
+    "id": 102,
+    "testId": 11,
+    "question": "Hasan Sabbah, dini inançları kendi çıkarları için kullanarak önemli devlet adamlarına suikastler düzenlemiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Bâtınilik (Haşhaşilik) hareketi dini inançları manipüle ederek siyasi emelleri doğrultusunda suikastlar düzenlemiştir."
+  },
+  {
+    "id": 103,
+    "testId": 11,
+    "question": "Kara Yülük Osman Bey tarafından kurulan ve tarihteki en önemli hükümdarı Uzun Hasan olan devlet Karakoyunlulardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Bu özelliklere sahip devlet Karakoyunlular değil, Akkoyunlulardır."
+  },
+  {
+    "id": 104,
+    "testId": 11,
+    "question": "Tolunoğulları ve İhşidiler gibi devletlerin kısa ömürlü olmasının temel nedeni Türklerin bu bölgelerde azınlık konumunda kalmasıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Yöneticiler Türk, halk Arap kökenliydi; bu durum devletlerin ömrünü kısalttı."
+  },
+  {
+    "id": 105,
+    "testId": 11,
+    "question": "1040 Dandanakan Savaşı'nın sonucunda Tuğrul Bey sultan unvanını almış ve Büyük Selçuklu Devleti kurulmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1040 Dandanakan Savaşı ile Büyük Selçuklu Devleti resmen kurulmuştur."
+  },
+  {
+    "id": 106,
+    "testId": 11,
+    "question": "Yusuf Has Hacip, Kaşgarlı Mahmud, Ahmet Yesevi ve Edip Ahmet Yükneki Gazneliler döneminde yetişmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Bu bilim insanları Gazneliler değil, Karahanlılar döneminde yetişmiştir."
+  },
+  {
+    "id": 107,
+    "testId": 11,
+    "question": "'İslam'ın Roma'sı' olarak bilinen Türk-İslam şehri Buhara, günümüzde Özbekistan sınırları içindedir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Buhara, ilim merkezi olması nedeniyle 'Kubbet-ül İslam' ve 'İslam'ın Roma'sı' unvanlarıyla anılır."
+  },
+  {
+    "id": 108,
+    "testId": 11,
+    "question": "Türkçeyi resmî dil ilan ederek Kaşgarlı Mahmud'un çalışmalarına destek veren devlet Selçuklulardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Türkçeyi resmî dil olarak kullanan ve Kaşgarlı Mahmud'u destekleyen devlet Selçuklular değil, Karahanlılardır."
+  },
+  {
+    "id": 109,
+    "testId": 11,
+    "question": "Gazneliler, 1040 Dandanakan Savaşı'nda Selçuklu ordusuna yenilerek dağılış sürecine girmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1040 Dandanakan Savaşı ile Gazneliler yıkılış sürecine girerken Büyük Selçuklu Devleti resmen kurulmuştur."
+  },
+  {
+    "id": 110,
+    "testId": 11,
+    "question": "1365-1469 yılları arasında hüküm süren ve Azerbaycan'ın Türkleşmesinde etkili olan devlet Karakoyunlulardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karakoyunlular, Bayram Hoca tarafından kurulmuş ve Doğu Anadolu ile Azerbaycan bölgesinde Türkleşmeyi hızlandırmıştır."
+  },
+  {
+    "id": 111,
+    "testId": 12,
+    "question": "Cengiz İmparatorluğu'nun dağılmasıyla ortaya çıkan devletler arasında Memlükler de yer almaktadır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Memlükler, Cengiz İmparatorluğu'nun parçalanmasından değil, Abbasi Devleti'nin Mısır'daki valilerinden bağımsızlaşmasıyla ortaya çıkmıştır."
+  },
+  {
+    "id": 112,
+    "testId": 12,
+    "question": "Tolunoğlu Ahmet, 868 yılında Mısır'da bağımsızlığını ilan ederek ilk Türk devletini kurmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Tolunoğlu Ahmet, Mısır'da kurulan ilk Türk-İslam devleti olan Tolunoğulları'nın kurucusudur."
+  },
+  {
+    "id": 113,
+    "testId": 12,
+    "question": "Büyük Selçuklu Devleti'ni kuran Türk boyu Oğuzların Kayı boyudur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Büyük Selçuklu Devleti, Kayı değil Oğuzların Üçok koluna bağlı Kınık boyu tarafından kurulmuştur."
+  },
+  {
+    "id": 114,
+    "testId": 12,
+    "question": "Tuğrul Bey, Alparslan ve Melikşah, Büyük Selçuklu Devleti'nde hükümdarlık yapmıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Tuğrul Bey kurucu, Alparslan ve Melikşah ise Büyük Selçuklu'nun en parlak dönemlerinin hükümdarlarıdır."
+  },
+  {
+    "id": 115,
+    "testId": 12,
+    "question": "Malazgirt Savaşı, Türklerin Anadolu'ya yerleşme sürecini tamamladığı ve Bizans'ın kesin olarak yenildiği son savaştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Malazgirt, Anadolu'nun kapılarını Türklere açan önemli bir savaştır; ancak bu bir son savaş değil başlangıçtır."
+  },
+  {
+    "id": 116,
+    "testId": 12,
+    "question": "Malazgirt Savaşı'nın ardından Bizans'ın Avrupa'dan yardım istemesi Haçlı Seferlerinin başlamasına zemin hazırlamıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Malazgirt Zaferi sonrası hızlı Türk ilerleyişi, Bizans'ın Avrupa'dan yardım isteyerek Haçlı Seferlerini başlatmasına yol açmıştır."
+  },
+  {
+    "id": 117,
+    "testId": 12,
+    "question": "Sultan Melikşah, Büyük Selçuklu Devleti'ne en parlak dönemini yaşatan hükümdardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Sultan Melikşah dönemi devletin en geniş sınırlara ulaştığı ve en parlak dönemdir."
+  },
+  {
+    "id": 118,
+    "testId": 12,
+    "question": "1090 yılında Alamut Kalesi'ni ele geçirerek suikastler düzenleyen kişi Nizamülmülk'tür.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Alamut Kalesi'ni ele geçiren Nizamülmülk değil, Hasan Sabbah'tır."
+  },
+  {
+    "id": 119,
+    "testId": 12,
+    "question": "Büyük Selçuklu Devleti'nde Bâtınilerin zararlı çalışmaları, devletin yıkılmasına zemin hazırlayan etkenler arasındadır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Hasan Sabbah'ın örgütü ve suikastler devleti içten sarsmıştır."
+  },
+  {
+    "id": 120,
+    "testId": 12,
+    "question": "1048 Pasinler Savaşı, Büyük Selçuklu Devleti ile Bizans ve müttefiki Gürcüler arasında yapılan ilk büyük meydan savaşıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Pasinler Savaşı, Türklerin Anadolu'ya yerleşme hazırlığının ilk büyük adımıdır."
+  },
+  {
+    "id": 121,
+    "testId": 13,
+    "question": "Karahanlılar, 840-1212 yılları arasında Orta Asya'da hüküm sürmüş ve 'Hakaniye Devleti' olarak da bilinmektedir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar hem Karahanlı hem de Hakaniye adıyla anılır."
+  },
+  {
+    "id": 122,
+    "testId": 13,
+    "question": "Karahanlılar'ın kurucusu Satuk Buğra Han'dır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Karahanlılar'ın kurucusu Satuk Buğra Han değil, Bilge Kül Kadir Han'dır."
+  },
+  {
+    "id": 123,
+    "testId": 13,
+    "question": "İslam dünyasının X. yüzyılda en kuzeyindeki temsilcisi olan ve Doğu Avrupa'daki ilk Müslüman Türk devleti İtil Bulgarlarıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İtil Bulgarları 922'de İslamiyet'i kabul ederek Doğu Avrupa'daki ilk temsilcisi olmuşlardır."
+  },
+  {
+    "id": 124,
+    "testId": 13,
+    "question": "Hindistan'a 17 sefer düzenleyen devlet Karahanlılardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Hindistan'a 17 sefer düzenleyen Karahanlılar değil, Gazneli Mahmud'dur."
+  },
+  {
+    "id": 125,
+    "testId": 13,
+    "question": "Memlüklerde 'en güçlü komutanın sultan olma hakkı' olduğundan veraset anlayışları diğer Türk devletlerinden farklıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Memlükler'de emirlerin de tahta geçme hakkı, bu devleti diğer Türk devletlerinden ayıran önemli bir özelliktir."
+  },
+  {
+    "id": 126,
+    "testId": 13,
+    "question": "Selahaddin Eyyübi, 1187 yılında Hıttin Savaşı'nı kazanarak Kudüs'ü Haçlılardan geri almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Selahaddin Eyyübi, 1187 Hıttin Savaşı ile Haçlıları mağlup ederek Kudüs'ü fethetmiştir."
+  },
+  {
+    "id": 127,
+    "testId": 13,
+    "question": "Büyük Selçuklu Devleti'nin son büyük hükümdarı Sultan Sencer'dir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Sultan Sencer (Sultan-ı Azam) Büyük Selçuklu'nun son büyük hükümdarı olarak kabul edilir."
+  },
+  {
+    "id": 128,
+    "testId": 13,
+    "question": "Abbasi Devleti tarafından Mısır'a vali olarak atanıp İhşidiler Devleti'ni kuran Türk hükümdar Tolunoğlu Ahmet'tir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "İhşidiler Devleti'nin kurucusu Tolunoğlu Ahmet değil, Muhammed bin Togaç'tır."
+  },
+  {
+    "id": 129,
+    "testId": 13,
+    "question": "Malazgirt Savaşı'nda beyaz elbise giyen Sultan Alparslan, ordusunu Turan taktiğiyle savaşa sokmuş ve Bizans'ı yenmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Sultan Alparslan, Malazgirt Savaşı öncesi beyaz elbisesini giyerek ordusuna manevi bir konuşma yapmıştır."
+  },
+  {
+    "id": 130,
+    "testId": 13,
+    "question": "Tolunoğulları ve İhşidiler, Abbasi Devleti'nin zayıfladığı dönemde bağımsızlıklarını ilan eden valiler tarafından kurulmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Her iki devlet de Abbasi valilerinin bağımsızlaşmasıyla kurulmuştur."
+  },
+  {
+    "id": 131,
+    "testId": 14,
+    "question": "751 Talas Savaşı'nda Abbasileri destekleyen ve İslamiyet'i kabul eden ilk Türk topluluğu Uygurlar'dır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Talas Savaşı'nda Abbasileri destekleyen ve İslamiyet'i kabul eden ilk Türk topluluğu Uygurlar değil, Karluklar'dır."
+  },
+  {
+    "id": 132,
+    "testId": 14,
+    "question": "Hazarlar, VII-X. yüzyıllar arasında Kafkaslar ve Karadeniz'in kuzeyinde siyasi iktidar sağlayarak Doğu Avrupa tarihinde büyük rol oynamıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Hazar Barış Çağı (Pax Hazaria) döneminde dinî hoşgörü ve ticari canlılık en üst seviyeye ulaşmıştır."
+  },
+  {
+    "id": 133,
+    "testId": 14,
+    "question": "Atatürk'ün 'Büyük Türk İmparatorluğu'nu teşkil etmiş yüksek bir Türk hakanı' diye andığı kişi Teoman'dır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Atatürk'ün andığı bu hükümdar Teoman değil, onun oğlu Mete Han'dır."
+  },
+  {
+    "id": 134,
+    "testId": 14,
+    "question": "Uygurlarda bozkırlı ve şehirli olmak üzere iki farklı yaşamın ortaya çıkmasının nedeni yerleşik yaşama geçilmesidir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Maniheizm dininin etkisiyle yerleşik yaşama geçen Uygurlarda bu iki farklı yaşam biçimi bir arada görülmüştür."
+  },
+  {
+    "id": 135,
+    "testId": 14,
+    "question": "Hunlarla yapılan savaşlarda başarısız olan Çin, yüzyıl süren askeri reform yaparak ordusunu Hunların taktiklerine göre yeniden düzenlemiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Çin, Hun saldırılarını durdurabilmek için Hunların taktiklerini ve kıyafetlerini örnek alan reformlar yapmıştır."
+  },
+  {
+    "id": 136,
+    "testId": 14,
+    "question": "Mete Han, Yüeçilerin toprak talebini kabul ederek toprağın milletin değil hükümdarın malı olduğunu savunmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Mete Han, toprak talebini reddederek toprağın milletin malı olduğunu ve savaşarak koruyacağını açıkça ifade etmiştir."
+  },
+  {
+    "id": 137,
+    "testId": 14,
+    "question": "Karahanlılar, Orta Asya'da kurulan ilk Müslüman Türk devletidir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar Orta Asya'da kurulan ilk Müslüman Türk devleti olma özelliğini taşır."
+  },
+  {
+    "id": 138,
+    "testId": 14,
+    "question": "İtalya'da Rönesans'ın başlaması, Avrupa'nın İslam bilginlerinden etkilenmesinin bir nedenidir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Rönesans bu etkileşimin bir nedeni değil; aksine bu sürecin ve kültürel birikimlerin bir sonucudur."
+  },
+  {
+    "id": 139,
+    "testId": 14,
+    "question": "Büyük Selçuklu Devleti'nin yıkılmasında Baba İshak Ayaklanması da etkili olmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Baba İshak Ayaklanması Büyük Selçuklu'yu değil, Anadolu (Türkiye) Selçuklu Devleti'ni zayıflatan bir olaydır."
+  },
+  {
+    "id": 140,
+    "testId": 14,
+    "question": "1040 Dandanakan Savaşı'nı kaybeden Gazneliler, Tuğrul Bey önderliğindeki Selçuklulara yenilmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1040 Dandanakan Savaşı, Gaznelilerin yıkılış sürecinin ve Büyük Selçuklu'nun kuruluşunun dönüm noktasıdır."
+  },
+  {
+    "id": 141,
+    "testId": 15,
+    "question": "Karahanlıların kurucusu Bilge Kül Kadir Han'dır, Satuk Buğra Han ise İslamiyet'i kabul eden hükümdardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Kurucu ile İslam'ı benimseten hükümdar birbirinden farklı kişilerdir."
+  },
+  {
+    "id": 142,
+    "testId": 15,
+    "question": "İtil Bulgarları, 922 yılında İslamiyet'i kabul ederek Doğu Avrupa'daki ilk Müslüman Türk temsilcisi olmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İtil Bulgarları, İslam dünyasının X. yüzyıldaki en kuzey temsilcisidir."
+  },
+  {
+    "id": 143,
+    "testId": 15,
+    "question": "Karahanlıların 'Ribat' adını verdikleri yapılar medreselerdir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Ribat adı verilen yapılar medreseler değil, kervansaraylardır."
+  },
+  {
+    "id": 144,
+    "testId": 15,
+    "question": "Gazneli Mahmud, ekonomik kaynak sağlamak ve İslamiyet'i yaymak amacıyla Hindistan'a seferler düzenlemiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Gazneli Mahmud'un Hindistan seferlerinin temel amaçları arasında bölgenin kaynakları ve İslam'ın yayılması yer almaktadır."
+  },
+  {
+    "id": 145,
+    "testId": 15,
+    "question": "Büyük Selçuklu Devleti, Oğuzların Üçok koluna bağlı Kınık boyu tarafından kurulmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Büyük Selçuklu Devleti'nin kurucusu olan boy, Oğuzların Kınık boyudur."
+  },
+  {
+    "id": 146,
+    "testId": 15,
+    "question": "Sultan Alparslan, Malazgirt Savaşı öncesinde Bizans İmparatoru Romen Diyojen'i 'atının kuyruğuna bağlayıp gezdireceğini' söylemiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Bu sözler Sultan Alparslan'a değil, Bizans İmparatoru Romen Diyojen'e aittir."
+  },
+  {
+    "id": 147,
+    "testId": 15,
+    "question": "Karahanlılar, Semerkant'ta ilk Türk-İslam medresesini açmıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar dönemi, Türk-İslam eğitim kurumlarının filizlendiği dönemdir."
+  },
+  {
+    "id": 148,
+    "testId": 15,
+    "question": "Muhammed bin Togaç, 'Akşit' ünvanıyla Abbasi halifesi tarafından onurlandırılmış ve İhşidiler Devleti'ni kurmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İhşidiler Devleti'nin kurucusu olan Muhammed bin Togaç'a 'nur saçan güneş' anlamına gelen Akşit ünvanı verilmiştir."
+  },
+  {
+    "id": 149,
+    "testId": 15,
+    "question": "1048 Pasinler Savaşı, Büyük Selçuklu Devleti'nin Bizans ve Gürcülere karşı kazandığı ilk büyük meydan savaşıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1048 yılında Bizans ve müttefiki Gürcülere karşı kazanılan Pasinler Savaşı, Türklerin Anadolu'ya yerleşme hazırlığının ilk büyük adımıdır."
+  },
+  {
+    "id": 150,
+    "testId": 15,
+    "question": "Buhara, Kaşgar ve Semerkant şehirleri Karahanlılar döneminde önemli Türk-İslam kültür merkezleri olmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar döneminde bu şehirler ilim, kültür ve ticaretin merkezi hâline gelmiştir."
+  },
+  {
+    "id": 151,
+    "testId": 16,
+    "question": "Baba İshak Ayaklanması, Büyük Selçuklu Devleti'nin yıkılmasına zemin hazırlayan gelişmeler arasında yer alır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Baba İshak Ayaklanması, Büyük Selçuklu'nun değil, Anadolu Selçuklu Devleti'nin yıkılış sürecinde etkili olan bir olaydır."
+  },
+  {
+    "id": 152,
+    "testId": 16,
+    "question": "Karahanlılar'ın kurucusu Satuk Buğra Han'dır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Karahanlılar'ın kurucusu Bilge Kül Kadir Han'dır. Satuk Buğra Han ise İslamiyet'i resmen kabul eden hükümdardır."
+  },
+  {
+    "id": 153,
+    "testId": 16,
+    "question": "İtil (Volga) Bulgarları, 922 yılında İslamiyet'i kabul ederek Doğu Avrupa'daki ilk Müslüman Türk temsilcisi olmuşlardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İtil Bulgarları, İslam dünyasının X. yüzyılda en kuzeyini teşkil eden ve Doğu Avrupa'daki ilk Müslüman Türk devleti olma özelliğini taşır."
+  },
+  {
+    "id": 154,
+    "testId": 16,
+    "question": "Karahanlılar, İslamiyet'i Orta Asya'nın tamamına yaydıklarından ilk Türk İslam devleti sayılır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Karahanlılar İslamiyet'i benimsemiş ve yaymışlardır, ancak Orta Asya'nın tamamına yaydıkları söylenemez. İlk Müslüman Türk devleti olmalarının asıl sebebi Orta Asya'da kurulan ilk Müslüman Türk devleti olmalarıdır."
+  },
+  {
+    "id": 155,
+    "testId": 16,
+    "question": "1176 Miryokefalon Savaşı, Türklerin Anadolu'dan atılamayacağını kesinleştiren savaştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Türklerin Anadolu'dan atılamayacağının kesinleşmesi 1176 Miryokefalon Savaşı ile olmuştur. Malazgirt ise Anadolu'nun kapılarını açmıştır."
+  },
+  {
+    "id": 156,
+    "testId": 16,
+    "question": "Gazneli Mahmud, Hindistan seferlerinde gösterdiği başarılar sayesinde 'Âlemin Aslanı' ve 'Zamanın Yegânesi' ünvanlarını almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Gazneli Mahmud, devleti en geniş sınırlarına ulaştırmış ve İslam dünyasına hizmetlerinden dolayı bu ünvanları almıştır."
+  },
+  {
+    "id": 157,
+    "testId": 16,
+    "question": "Semerkant, Timur ile birlikte 'Şehirlerin Şahı' ünvanını almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "IX ve X. yüzyılda Türk şehirlerinin en ünlüsü olan Semerkant, daha sonra Timur döneminde 'Şehirlerin Şahı' ünvanını kazanmıştır."
+  },
+  {
+    "id": 158,
+    "testId": 16,
+    "question": "1040 Dandanakan Savaşı'nda Selçuklular Gaznelilere yenilmiş ve Büyük Selçuklu Devleti dağılma sürecine girmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "1040 Dandanakan Savaşı'nda Gazneliler yenilgiye uğramıştır. Bu savaşla Gazneli Devleti çöküşe geçmiş, Büyük Selçuklu Devleti ise resmen kurulmuştur."
+  },
+  {
+    "id": 159,
+    "testId": 16,
+    "question": "Karakoyunlular, Bayram Hoca tarafından kurulmuş ve Azerbaycan'ın Türkleşmesinde etkili olmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karakoyunlular, Bayram Hoca tarafından kurulan ve Doğu Anadolu ile Azerbaycan bölgesinde hakimiyet kurmuş bir Türk devletidir."
+  },
+  {
+    "id": 160,
+    "testId": 17,
+    "question": "Memlükler, Cengiz İmparatorluğu'nun dağılmasıyla ortaya çıkan Moğol kökenli devletlerden biridir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Memlükler, Mısır'da kurulan bir Türk-İslam devletidir. Cengiz İmparatorluğu'nun parçalanmasıyla kurulan Moğol kökenli devletlerden biri değildir."
+  },
+  {
+    "id": 161,
+    "testId": 17,
+    "question": "Tolunoğlu Ahmet, 868 yılında Mısır'da bağımsızlığını ilan ederek Mısır'da ilk Türk devletini kurmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Mısır'da kurulan ilk Türk-İslam devleti olan Tolunoğulları'nın kurucusu Tolunoğlu Ahmet'tir."
+  },
+  {
+    "id": 162,
+    "testId": 17,
+    "question": "Tarihte ilk kez bir Bizans imparatoru, 1071 Malazgirt Savaşı'nda Müslüman bir sultanın eline esir düşmüştür.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "1071 Malazgirt Savaşı sonunda Bizans İmparatoru Romen Diyojen, Sultan Alparslan'a esir düşmüştür."
+  },
+  {
+    "id": 163,
+    "testId": 17,
+    "question": "Sultan Alparslan, Ani Kalesi'ni fethinden dolayı 'Ebü'l-Feth' ünvanını almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Sultan Alparslan, Ani Kalesi'ni fethi sonrası halife tarafından 'Ebü'l-Feth' (Fetihlerin Babası) ünvanıyla onurlandırılmıştır."
+  },
+  {
+    "id": 164,
+    "testId": 17,
+    "question": "751 Talas Savaşı, Türklerin kitleler halinde İslamiyet'i tanımaya başladığı dönüm noktasıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "751 Talas Savaşı, Türklerin kitleler halinde İslamiyet'i tanımaya ve kabul etmeye başladığı tarihsel bir kırılma noktasıdır."
+  },
+  {
+    "id": 165,
+    "testId": 17,
+    "question": "Türklerin İslamiyet'e geçişinde Abbasilerin ırkçı politikayı terk etmesi etkili olmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Talas Savaşı, Abbasilerin ırkçı politikayı terk etmesi ve Gök Tanrı inancının İslamiyet ile benzerlik taşıması Türklerin İslamiyet'e geçişinde belirleyici rol oynamıştır."
+  },
+  {
+    "id": 166,
+    "testId": 17,
+    "question": "Büyük Selçuklu Devleti'nin yönetim merkezlerinden biri Bağdat'tır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Selçuklular Nişabur, Rey, İsfahan ve Merv şehirlerini merkez olarak kullanmışlardır. Bağdat ise halifelik merkezidir ve doğrudan Selçuklu başkenti değildir."
+  },
+  {
+    "id": 167,
+    "testId": 17,
+    "question": "İlhanlı hükümdarı Hülagü Han, Alamut Kalesi'ni yıkarak Batınilik faaliyetlerine son vermiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İlhanlı hükümdarı Hülagü Han, 1256 yılında yaptığı sefer sonucu Alamut Kalesi'ni yıkarak Batınilik faaliyetlerini tamamen ortadan kaldırmıştır."
+  },
+  {
+    "id": 168,
+    "testId": 17,
+    "question": "Türkler İslamiyet'i kabul ettikten sonra İslamiyet'i Arabistan bölgesine de yaymışlardır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "İslamiyet, Türkler Müslüman olmadan çok önce Arabistan bölgesinde yayılmıştır. Türklerin temel katkısı İslamiyet'i Anadolu, Balkanlar ve Hindistan gibi yeni coğrafyalara taşımak olmuştur."
+  },
+  {
+    "id": 169,
+    "testId": 17,
+    "question": "Karahanlılar'ın resmî dilinin Türkçe olması, yönetici ve halkın Türk olması, Uygur alfabesini kullanmaları devletin ulusçu karakterini gösterir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Resmî dilin Türkçe olması, halkın ve yöneticinin Türk olması ve millî bir alfabe olan Uygur alfabesinin kullanılması Karahanlılar'ın ulusçu yapısını kanıtlar."
+  },
+  {
+    "id": 170,
+    "testId": 18,
+    "question": "Karahanlılar'da Han ünvanının kullanılmaya devam etmesi ve ikili teşkilat uygulamasının sürdürülmesi, eski Türk geleneklerinin devam ettirilmesiyle açıklanır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Han ünvanı ve ikili teşkilat, İslamiyet öncesi Türk devlet gelenekleridir. Karahanlılar Müslüman olmalarına rağmen bu eski geleneklerini sürdürmüşlerdir."
+  },
+  {
+    "id": 171,
+    "testId": 18,
+    "question": "Karahanlılar Mısır'da kurulmuştur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Karahanlılar Mısır'da değil, Orta Asya'da kurulmuşlardır. Mısır'da kurulan ilk Türk devleti Tolunoğulları'dır."
+  },
+  {
+    "id": 172,
+    "testId": 18,
+    "question": "Karahanlılar'ın hem halkı hem de yöneticilerinin Türk olması, Mısır'daki Türk devletlerine göre daha uzun ömürlü olmalarını sağlamıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar'ın hem halkı hem de yöneticileri Türk'tür. Mısır'daki devletlerin ise yöneticileri Türk, halkı Arap'tı; bu durum Karahanlılar'ın daha köklü olmasını sağlamıştır."
+  },
+  {
+    "id": 173,
+    "testId": 18,
+    "question": "Sultan ünvanını kullanan ilk Türk hükümdarı Gazneli Mahmud'dur.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Sultan ünvanını ilk kez, Hindistan seferleri ve halifeye hizmetleri nedeniyle Gazneli Mahmud kullanmıştır."
+  },
+  {
+    "id": 174,
+    "testId": 18,
+    "question": "Tuğrul Bey, 1057 yılında Bağdat'a gelerek halifeyi Büveyhoğullarının baskısından kurtarmış ve 'Doğu'nun ve Batı'nın Hükümdarı' ünvanını almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Büyük Selçuklu kurucusu Tuğrul Bey, 1055-1057 Bağdat seferi ile halifeyi koruma altına almış ve bu ünlü ünvanı kazanmıştır."
+  },
+  {
+    "id": 175,
+    "testId": 18,
+    "question": "Sultan Alparslan'a 'Ebü'l-Feth' ünvanını veren kişi Abbasi Halifesi Kaim Bi-Emrillah'tır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Ani Kalesi'ni fetheden Sultan Alparslan'a Abbasi halifesi Kaim Bi-Emrillah tarafından 'Ebü'l-Feth' (Fetihlerin Babası) ünvanı verilmiştir."
+  },
+  {
+    "id": 176,
+    "testId": 18,
+    "question": "Malazgirt Savaşı'ndan sonra Sultan Alparslan'ın komutanlarına 'Toprak fethedenin malıdır' demesi merkezi otoriteyi güçlendirmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Bu uygulama komutanları teşvik ederek fetihleri ve Anadolu'ya göçü hızlandırmıştır. Ancak yerel güçler oluşturduğu için merkezi otoriteyi zayıflatma riski taşımaktadır."
+  },
+  {
+    "id": 177,
+    "testId": 18,
+    "question": "Saltuklular, Büyük Selçuklu Devleti'nin dağılmasıyla ortaya çıkan atabeyliklere ait bir yönetim birimi değildir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İldenizliler, Zengiler ve Böriler Selçuklu atabeylikleridir. Saltuklular ise Anadolu'da kurulan ilk Türk beyliğidir; atabeyliklere dahil edilmez."
+  },
+  {
+    "id": 178,
+    "testId": 18,
+    "question": "Bâtınilik hareketi, Selçuklu devlet adamlarına suikastlar düzenleyerek mevcut Sünni otoriteyi yıkmayı hedeflemiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Hasan Sabbah liderliğindeki Bâtınilik hareketi, Selçuklu devlet adamlarına suikastlar düzenleyerek devleti içten çökertmeyi ve Sünni otoriteyi yıkmayı hedeflemiştir."
+  },
+  {
+    "id": 179,
+    "testId": 19,
+    "question": "Fatımiler, Mısır'da hakimiyet kurmuş bir Türk devletidir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Fatımiler Mısır'da kurulmuş bir devlet olmakla birlikte Türk değil, Şii-Arap kökenli bir devlettir."
+  },
+  {
+    "id": 180,
+    "testId": 19,
+    "question": "Nesa, Selçuklularla Gazneliler arasında yapılan ve Selçukluların kazandığı ilk savaştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Selçuklu-Gazneli arasındaki ilk savaş 1035 Nesa Savaşı'dır ve Selçuklular bu savaşı kazanmıştır."
+  },
+  {
+    "id": 181,
+    "testId": 19,
+    "question": "Osmanlı Devleti'nde hükümdarların şer'i buyruklara uygun davranması, eski Türk geleneklerine bağlılığın kanıtıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Şer'i buyruklara uygun davranmak tamamen İslami bir uygulamadır. Eski Türk geleneklerine bağlılığı değil, yeni dinin kurallarına uyumu gösterir."
+  },
+  {
+    "id": 182,
+    "testId": 19,
+    "question": "Memlüklerde en güçlü komutanın başa geçme hakkı olduğu için farklı soylardan kişiler hükümdar olabilmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Memlüklerde diğer Türk devletlerinden farklı olarak 'en güçlü komutanın başa geçme hakkı' vardır. Bu da tek bir hanedan soyunun şart olmadığını gösterir."
+  },
+  {
+    "id": 183,
+    "testId": 19,
+    "question": "Semerkant Medresesi, Sultan Melikşah döneminde Büyük Selçuklular tarafından inşa edilmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Semerkant Medresesi, Karahanlılar döneminde inşa edilen ilk Türk-İslam medreselerinden biridir. Melikşah dönemi ise Büyük Selçuklu ile ilgilidir."
+  },
+  {
+    "id": 184,
+    "testId": 19,
+    "question": "Kınık boyu, Oğuzların Üçoklar koluna bağlı Deniz Han soyundan gelmektedir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Büyük Selçuklu Devleti'nin kurucu boyu olan Kınık, Oğuzların Üçoklar koluna bağlı Deniz Han soyundan gelmektedir."
+  },
+  {
+    "id": 185,
+    "testId": 19,
+    "question": "Gazneliler adını kurucu hükümdarından almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Gazneliler adını kuruldukları Afganistan'ın Gazne şehrinden almışlardır. Kuruldukları bölgenin adını taşımaktadırlar."
+  },
+  {
+    "id": 186,
+    "testId": 19,
+    "question": "Bilge Kül Kadir Han Karahanlılar'ın, Semerkant Medresesi ve Ribat ise Karahanlılar'ın simgeleri arasındadır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Bilge Kül Kadir Han kurucusu, Semerkant Medresesi ilk medreseleri ve Ribat ilk kervansarayları olduğu için tüm bu kavramlar Karahanlılar'a aittir."
+  },
+  {
+    "id": 187,
+    "testId": 19,
+    "question": "Gazneli Mahmud'a Hint Seferleri'nin sonucunda 'Ebü'l-Feth' ünvanı verilmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Ebü'l-Feth (Fetihlerin Babası) ünvanı Gazneli Mahmud'a değil, Ani Kalesi'ni fethinden dolayı Sultan Alparslan'a verilmiştir."
+  },
+  {
+    "id": 188,
+    "testId": 19,
+    "question": "Nizamiye Medreseleri'nde şehzadelere özel eğitim verilmiştir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Şehzadelerin eğitimi Nizamiye Medreselerinin değil, özel eğitimciler olan Atabeylerin görevidir. Nizamiye Medreseleri devlet memuru ve din adamı yetiştirmiştir."
+  },
+  {
+    "id": 189,
+    "testId": 20,
+    "question": "Semerkant, Büyük Selçuklu Devleti'nin başkentleri arasında yer almaz.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Semerkant, Karahanlılar ve daha sonra Timur Devleti için önemli bir merkezdir. Büyük Selçuklu'nun resmi başkentleri Nişabur, Rey, İsfahan, Merv ve Cend'dir."
+  },
+  {
+    "id": 190,
+    "testId": 20,
+    "question": "Malazgirt Savaşı, Romen Diyojen'in esir düştüğü ve komutanlara kılıç hakkı tanınan savaştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Rahve Ovası'nda yapılan Malazgirt Savaşı'nda Bizans İmparatoru Romen Diyojen esir düşmüş, sonrasında Sultan Alparslan komutanlara kılıç hakkı tanımıştır."
+  },
+  {
+    "id": 191,
+    "testId": 20,
+    "question": "Kut, hükümdara devleti yönetme yetkisinin Tanrı tarafından verildiğine inanılan eski bir Türk devlet geleneğidir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Kut anlayışı, İslamiyet öncesi Türk devlet geleneğinden gelmekte olup İlk Türk İslam devletlerinde 'Allah'ın takdiri veya nasibi' olarak yorumlanarak devam etmiştir."
+  },
+  {
+    "id": 192,
+    "testId": 20,
+    "question": "Eski Türklerdeki Kurultay'ın yerini, Türk İslam devletlerinde 'Divan' teşkilatı almıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Eski Türklerdeki Kurultay veya Toy meclisinin yerini, Türk-İslam devletlerinde devlet işlerinin yürütüldüğü Divan teşkilatı almıştır."
+  },
+  {
+    "id": 193,
+    "testId": 20,
+    "question": "Gulam sisteminde askerlerin maaşları ikta sistemi ile karşılanmıştır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Gulam sistemindeki askerlerin maaşları doğrudan devlet hazinesinden ödenirdi. İkta sistemi ise daha çok eyalet askerleri için kullanılırdı."
+  },
+  {
+    "id": 194,
+    "testId": 20,
+    "question": "Divan-ı Hümayun, Büyük Selçuklu Devleti'nde kurulan merkezi yönetim organıdır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Divan-ı Hümayun, Osmanlı Devleti'ne özgü bir merkezi yönetim organıdır. Selçuklularda bu kurumun adı Büyük Divan veya Divan-ı Saltanat'tır."
+  },
+  {
+    "id": 195,
+    "testId": 20,
+    "question": "Karahanlılar'ın ordusu büyük çoğunlukla Türklerden oluşmaktaydı.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Karahanlılar hem kuruldukları bölge hem de toplumsal yapıları gereği tamamen Türk unsurlardan oluşan bir ordu ve halk yapısına sahipti."
+  },
+  {
+    "id": 196,
+    "testId": 20,
+    "question": "Hindistan'daki Taç Mahal, Babürler tarafından inşa ettirilen bir Türk-İslam eseridir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "Taç Mahal, Babür İmparatoru Şah Cihan tarafından eşi Mümtaz Mahal anısına Hindistan'da inşa ettirilmiş bir Türk-İslam mimari şaheseridir."
+  },
+  {
+    "id": 197,
+    "testId": 20,
+    "question": "İkta sistemi, devlet topraklarının gelirlerinin hizmet karşılığı asker ve devlet görevlilerine bırakıldığı bir sistemdir.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": true,
+    "explanation": "İkta sistemi, devlete ait topraklardan elde edilen gelirlerin askerî ve sivil devlet görevlilerine maaş veya hizmet karşılığı olarak verilmesini esas alır."
+  },
+  {
+    "id": 198,
+    "testId": 20,
+    "question": "Nizamiye Medreselerinin açılış amaçlarından biri tüccarların barınma ve güvenlik ihtiyaçlarını karşılamaktır.",
+    "category": "İlk Türk İslam Devletleri",
+    "correctAnswer": false,
+    "explanation": "Tüccarların barınma, beslenme ve güvenlik gibi ihtiyaçlarını karşılamak medreselerin değil, kervansarayların görevidir."
+  },
+  {
+    "id": 199,
+    "testId": 21,
+    "question": "Haçlı Seferleri nedeniyle Anadolu Selçuklu Devleti başkentini İznik'ten Konya'ya taşımak zorunda kalmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "I. Haçlı Seferleri sırasında başkent İznik kaybedilince, I. Kılıçarslan devletin merkezini Konya'ya taşımıştır."
+  },
+  {
+    "id": 200,
+    "testId": 21,
+    "question": "Çaka Bey, Bizans'ın kışkırtmaları sonucu damadı I. Kılıçarslan tarafından öldürülmüştür.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "İlk Türk denizcisi kabul edilen Çaka Bey, Bizans İmparatoru I. Aleksios Komnenos'un şikayeti üzerine I. Kılıçarslan tarafından öldürülmüştür."
+  },
+  {
+    "id": 201,
+    "testId": 21,
+    "question": "Türk Deniz Kuvvetleri'nin kuruluş yılı 1081'dir; çünkü Çaka Bey bu yıl İzmir'de ilk Türk donanmasını kurmuştur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "1081 yılı, Çaka Bey'in İzmir'de ilk Türk donanmasını kurduğu tarih olması sebebiyle Türk Deniz Kuvvetleri'nin kuruluş yılı olarak kabul edilir."
+  },
+  {
+    "id": 202,
+    "testId": 21,
+    "question": "1176 Miryokefalon Savaşı'nda Anadolu Selçuklu Devleti, Bizans İmparatorluğu'nu mağlup etmiştir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Miryokefalon Zaferi, II. Kılıçarslan döneminde kazanılmış ve Anadolu'nun Türk yurdu olduğu kesinleşmiştir."
+  },
+  {
+    "id": 203,
+    "testId": 21,
+    "question": "Kayseri'deki Gevher Nesibe Hatun Şifahanesi, dünyanın ilk tıp fakültesi olarak kabul edilmektedir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "1204-1206 yılları arasında inşa edilen Gevher Nesibe Darüşşifası ve Medresesi, hem şifahane hem de tıp eğitimi veren dünyanın ilk tıp fakültesi olarak kabul edilir."
+  },
+  {
+    "id": 204,
+    "testId": 21,
+    "question": "II. Kılıçarslan ülkeyi 11 oğlu arasında paylaştırmış; bu durum taht kavgalarına yol açmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "II. Kılıçarslan, saltanatının son yıllarında Türk veraset anlayışı gereği ülkeyi 11 oğlu arasında paylaştırmış; bu durum taht kavgalarına zemin hazırlamıştır."
+  },
+  {
+    "id": 205,
+    "testId": 21,
+    "question": "Miryokefalon Savaşı 'Yurtutan Savaşı' olarak da anılmakta olup Bizans'ın Türkleri Anadolu'dan atma ümitlerini kesin olarak bitirmiştir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "1176 Miryokefalon Savaşı, Bizans'ın Anadolu'yu geri alma umutlarını tamamen bitirdiği için 'Yurtutan' olarak bilinir."
+  },
+  {
+    "id": 206,
+    "testId": 21,
+    "question": "Anadolu Selçuklu Devleti'nde donanma komutanlarına 'Reisül-Bahr' denirdi.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Denizlerin reisi anlamına gelen Reisül-Bahr veya Emir-i Sevahil, Selçuklu donanmasının başındaki görevlidir."
+  },
+  {
+    "id": 207,
+    "testId": 21,
+    "question": "1243 Kösedağ Savaşı, Anadolu Selçuklu Devleti'nin yıkılma sürecine girmesine neden olmuştur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Kösedağ Savaşı sonrası Anadolu Moğol (İlhanlı) hakimiyetine girmiş ve Selçuklu Devleti merkezi otoritesini kaybederek yıkılma sürecine girmiştir."
+  },
+  {
+    "id": 208,
+    "testId": 22,
+    "question": "Anadolu Selçuklu Devleti'nde mali işlerden sorumlu olan ve Divan-ı İstifa'ya başkanlık eden görevli Müstevfi'dir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Müstevfi, maliye teşkilatının başıdır ve bütçe işlerini yürütür."
+  },
+  {
+    "id": 209,
+    "testId": 22,
+    "question": "Germiyanoğulları, Ege kıyılarında denizcilik faaliyetleriyle uğraşmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Germiyanoğulları Kütahya merkezli kurulmuş bir kara beyliğidir. Karesioğulları, Aydınoğulları, Saruhanoğulları ve Menteşeoğulları ise Ege ve Marmara kıyılarında denizcilikle uğraşmıştır."
+  },
+  {
+    "id": 210,
+    "testId": 22,
+    "question": "Saltuklular, Malazgirt Savaşı'ndan sonra Anadolu'da kurulan ilk Türk beyliğidir ve merkezi Erzurum'dur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Saltuklular, Malazgirt sonrası Anadolu'da kurulan ilk Türk beyliğidir ve merkezi Erzurum'dur."
+  },
+  {
+    "id": 211,
+    "testId": 22,
+    "question": "Karahanlılar, Anadolu'yu Türkleştirme ve Haçlı Seferlerine karşı Anadolu'yu savunma çabalarında etkili olmuştur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Karahanlılar Orta Asya'da kurulmuş bir devlettir. Anadolu'nun fethi, Bizans ile mücadele veya Haçlı Seferleri ile coğrafi konumları gereği bir ilgileri yoktur."
+  },
+  {
+    "id": 212,
+    "testId": 22,
+    "question": "Ahi Evran, Anadolu'da esnaf ve sanatkâr teşkilatlanmasını sağlayan Ahilik örgütünün kurucusudur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Asıl adı Mahmud bin Ahmet el-Hoyi olan Ahi Evran, XIII. yüzyılda Hoy şehrinden Anadolu'ya gelmiş ve Ahilik teşkilatını kurmuştur."
+  },
+  {
+    "id": 213,
+    "testId": 22,
+    "question": "Baba İshak İsyanı, Anadolu Selçuklu Devleti'nin askeri zafiyetini Moğollara kanıtlayarak Kösedağ yenilgisinin zeminini hazırlamıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Baba İshak (Babailer) İsyanı, Anadolu Selçuklu Devleti'nin merkezi otoritesini sarsmış ve askeri zafiyetini Moğollara kanıtlamıştır."
+  },
+  {
+    "id": 214,
+    "testId": 22,
+    "question": "UNESCO tarafından 1985'te Dünya Miras Listesi'ne alınan Divriği Ulu Camii, Mengücekliler dönemine aittir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Sivas Divriği'de bulunan Divriği Ulu Camii ve Darüşşifası, mimari özellikleri ve taş işçiliği ile UNESCO Dünya Miras Listesi'nde yer alan bir Mengücekli eseridir."
+  },
+  {
+    "id": 215,
+    "testId": 22,
+    "question": "Mengüceklilere ait eserlerin büyük bölümü 1921 ve 1939'daki depremler nedeniyle yıkılmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Merkezi Erzincan olan Mengücekliler dönemine ait birçok yapı, bölgedeki büyük depremler sebebiyle yıkılmış ve günümüze ulaşamamıştır."
+  },
+  {
+    "id": 216,
+    "testId": 23,
+    "question": "Anadolu Selçuklu Devleti'nde inşa edilen ilk kervansaray Alay Han'dır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Aksaray-Kayseri yolu üzerinde bulunan Alay Han, Sultan II. Kılıçarslan tarafından yaptırılan Anadolu'nun ilk kervansarayıdır."
+  },
+  {
+    "id": 217,
+    "testId": 23,
+    "question": "Anadolu Selçuklu hükümdarları Keyhüsrev, Keykavus, Keykubat gibi Farsça kökenli ünvanlar kullanmışlardır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Anadolu Selçuklu hükümdarları, İran kültürünün etkisiyle Keyhüsrev, Keykavus ve Keykubat gibi ünvanları yaygın olarak kullanmışlardır."
+  },
+  {
+    "id": 218,
+    "testId": 23,
+    "question": "Konya Taş Mescid, Antalya Yivli Minare ve Sivas Gök Medrese, Anadolu Selçuklu Devleti'nden günümüze kalan eserlerdir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Listelenen bu eserler, Anadolu Selçuklu Devleti'nin hakim olduğu Konya, Antalya ve Sivas gibi merkezlerde inşa edilmiş önemli mimari yapılardır."
+  },
+  {
+    "id": 219,
+    "testId": 23,
+    "question": "Baba İshak İsyanı yalnızca ekonomik nedenlerden kaynaklanmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Baba İshak İsyanı; hem merkezi otoritenin zayıflığı (siyasi), hem otlak yetersizliği (sosyo-ekonomik), hem de eski inançların etkisiyle (dinî) birden fazla nedene sahip karmaşık bir halk hareketidir."
+  },
+  {
+    "id": 220,
+    "testId": 23,
+    "question": "Anadolu'da kurulan ilk medrese, Danişmentliler tarafından Tokat-Niksar'a yaptırılan Yağıbasan Medresesi'dir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Tokat ve çevresinde hüküm süren Danişmentliler tarafından yapılan Yağıbasan Medresesi, Anadolu'da kurulan ilk medrese örneğidir."
+  },
+  {
+    "id": 221,
+    "testId": 23,
+    "question": "Artuklular, Malabadi Köprüsü ve Mardin'deki Hatuniye Medresesi gibi eserler bırakmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Batman ve Mardin çevresinde hüküm süren Artuklular, bölgeye başta Malabadi Köprüsü olmak üzere birçok medrese ve cami kazandırmıştır."
+  },
+  {
+    "id": 222,
+    "testId": 23,
+    "question": "Karamanoğlu Mehmet Bey, 1277 yılında Türkçeyi resmi dil ilan etmiştir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Karamanoğlu Mehmet Bey, 1277 yılında yayımladığı fermanla Türkçeyi resmi dil ilan ederek Anadolu'da Türkçenin gelişimine büyük katkı sağlamıştır."
+  },
+  {
+    "id": 223,
+    "testId": 23,
+    "question": "Karamanlılar, 1071 Malazgirt Savaşı'nın hemen ardından kurulan I. Dönem Türk Beylikleri arasındadır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Saltuklular, Danişmentliler, Mengücekliler ve Artuklular I. Beylikler dönemine aittir. Karamanlılar ise II. Beylikler döneminde, Türkiye Selçuklu'nun zayıflamasıyla kurulmuştur."
+  },
+  {
+    "id": 224,
+    "testId": 24,
+    "question": "El-Cezeri, sibernetiğin kurucusu sayılmakta olup Artuklular sarayında görev yapmıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Sibernetiğin babası olarak kabul edilen El-Cezeri, Artuklular sarayında görev yapmış ve mühendislik alanında eşsiz eserler vermiştir."
+  },
+  {
+    "id": 225,
+    "testId": 24,
+    "question": "1243 Kösedağ Savaşı, Anadolu'da ilk Türk beyliklerinin kurulmasına neden olmuştur.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Anadolu'da ilk Türk beylikleri, Malazgirt Savaşı'ndan (1071) sonra kurulmuştur. Kösedağ Savaşı'ndan sonra kurulanlar ise 'İkinci Dönem Türk Beylikleri'dir."
+  },
+  {
+    "id": 226,
+    "testId": 24,
+    "question": "Artukoğulları, 1243 Kösedağ Savaşı'ndan sonra kurulan II. Dönem Türk Beylikleri arasındadır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": false,
+    "explanation": "Artukoğulları, 1071 Malazgirt Savaşı'ndan sonra kurulan I. Dönem Türk Beylikleri arasındadır."
+  },
+  {
+    "id": 227,
+    "testId": 24,
+    "question": "Karamanoğulları, Selçuklu başkentine hakim olduğu için kendisini Anadolu Selçuklu Devleti'nin mirasçısı saymıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Konya'da kurulan Karamanoğulları, Selçuklu başkentine hakim oldukları için kendilerini onların varisi saymış ve Osmanlı ile en çok mücadele eden beylik olmuştur."
+  },
+  {
+    "id": 228,
+    "testId": 24,
+    "question": "Karesioğulları, Saruhanoğulları ve Aydınoğulları sahil bölgelerinde kurulduklarından denizcilikle uğraşmışlardır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Karesioğulları (Balıkesir), Saruhanoğulları (Manisa) ve Aydınoğulları (Aydın), sahil bölgelerinde kuruldukları için denizcilikle uğraşmışlardır."
+  },
+  {
+    "id": 229,
+    "testId": 24,
+    "question": "Mevlâna Celâleddin-i Rumi, Mesnevi ve Divan-ı Kebir adlı eserleri kaleme almıştır.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Mevlâna Celâleddin-i Rumi, Anadolu Selçuklu döneminde yaşamış; en önemli eserleri Mesnevi ve Divan-ı Kebir'dir."
+  },
+  {
+    "id": 230,
+    "testId": 24,
+    "question": "Makalat adlı eser, Hacı Bektaş-ı Veli'ye aittir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Makalat, Bektaşilik tarikatının piri olan Hacı Bektaş-ı Veli'nin en ünlü eseridir."
+  },
+  {
+    "id": 231,
+    "testId": 24,
+    "question": "Risaletün Nushiyye adlı eser Yunus Emre'ye aittir.",
+    "category": "Anadolu (Türkiye) Selçuklu Devleti ve I. ve II. Beylikler Dönemi",
+    "correctAnswer": true,
+    "explanation": "Risaletün-Nushiyye (Nasihatler Kitabı), Türk tasavvuf edebiyatının öncüsü Yunus Emre tarafından yazılmıştır."
+  },
+  {
+    "id": 232,
+    "testId": 25,
+    "question": "Osmanlı Devleti'nde devşirme yoluyla gelenlerin padişahın doğrudan hizmetine girmesi ve devlet kademelerinde yükselmesi 'Kul sistemi' olarak adlandırılır.",
+    "category": "Osmanlı Devleti Kültür ve Medeniyeti",
+    "correctAnswer": true,
+    "explanation": "Osmanlı'da devşirme yoluyla gelenlerin padişahın doğrudan hizmetine girmesi ve devlet kademelerinde yükselmesi Kul sistemi olarak adlandırılır."
+  },
+  {
+    "id": 233,
+    "testId": 25,
+    "question": "İstimalet politikası, fethedilen bölgelerdeki halkın devlete bağlılığını artıran ve bir kısmının İslamiyet'i benimsemesinde etkili olan bir hoşgörü siyasetidir.",
+    "category": "Osmanlı Devleti Kültür ve Medeniyeti",
+    "correctAnswer": true,
+    "explanation": "İstimalet politikası (hoşgörü siyaseti), fethedilen bölgelerdeki halkın devlete olan bağlılığını artırmış ve Bosna-Hersek gibi Balkan topluluklarında İslamiyet'in benimsenmesinde etkili olmuştur."
+  },
+  {
+    "id": 234,
+    "testId": 25,
+    "question": "Osmanlı Devleti'nin uzun ömürlü olmasında ülkeyi parçalamayan veraset anlayışı, güçlü merkezi yapı ve kurumsallaşmış sistemler belirleyici rol oynamıştır.",
+    "category": "Osmanlı Devleti Kültür ve Medeniyeti",
+    "correctAnswer": true,
+    "explanation": "Ülkenin parçalanmasını engelleyen veraset değişiklikleri, güçlü merkezi yapı ve iskân, istimalet, devşirme ve tımar gibi kurumsallaşmış sistemler Osmanlı'nın uzun ömürlü olmasını sağlamıştır."
+  },
+  {
+    "id": 235,
+    "testId": 25,
+    "question": "Bitinya, İstanbul'un tarihsel isimlerinden biridir.",
+    "category": "Osmanlı Devleti Kültür ve Medeniyeti",
+    "correctAnswer": false,
+    "explanation": "Bitinya (Bithynia), İstanbul'un bir ismi değildir. Bursa, Bilecik, Kocaeli ve Sakarya bölgesini kapsayan antik bir coğrafi bölgenin adıdır."
+  },
+  {
+    "id": 236,
+    "testId": 25,
+    "question": "Osmanlı'da sınır boylarında oturan Akıncılar, keşif hareketi yapar ve ilk saldırıyı gerçekleştirirdi.",
+    "category": "Osmanlı Devleti Kültür ve Medeniyeti",
+    "correctAnswer": true,
+    "explanation": "Mihaloğlu, Malkoçoğlu, Evrenosoğlu gibi ailelerin mensup olduğu Akıncılar, sınır boylarında güvenliği sağlar, keşif yapar ve orduya yol açardı."
+  }
+]

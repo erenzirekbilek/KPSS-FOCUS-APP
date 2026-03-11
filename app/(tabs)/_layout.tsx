@@ -1,13 +1,18 @@
 // app/(tabs)/_layout.tsx
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemeContext } from "../../context/ThemeContext";
+import { playSound, preloadSounds } from "../../utils/soundManager";
 
 export default function TabLayout() {
   const theme = useContext(ThemeContext);
   const insets = useSafeAreaInsets();
+
+  useEffect(() => {
+    preloadSounds();
+  }, []);
 
   if (!theme) return null;
 
@@ -23,6 +28,11 @@ export default function TabLayout() {
 
   return (
     <Tabs
+      screenListeners={{
+        tabPress: () => {
+          playSound("click");
+        },
+      }}
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: colors.accent,
@@ -62,20 +72,29 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="stats"
+        name="True-False"
         options={{
-          title: "İstatistikler",
+          title: "True-False",
           tabBarIcon: ({ color }) => (
-            <Ionicons name="stats-chart" size={24} color={color} />
+            <Ionicons name="checkmark-circle-outline" size={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="stats"
         options={{
-          title: "Profil",
+          title: "Doğru-Yanlış",
           tabBarIcon: ({ color }) => (
-            <Ionicons name="person" size={24} color={color} />
+            <Ionicons name="help-outline" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="fun"
+        options={{
+          title: "Oyun",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="game-controller-outline" size={24} color={color} />
           ),
         }}
       />
