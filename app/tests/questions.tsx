@@ -27,7 +27,6 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemeContext } from "../../context/ThemeContext";
 import { db } from "../../services/database";
 import { playSound, preloadSounds } from "../../utils/soundManager";
-import { showInterstitial } from "../../services/admob";
 
 // Android için LayoutAnimation'ı etkinleştir
 if (
@@ -105,7 +104,7 @@ function SkeletonLoader({ colors }: { colors: typeof LightMode }) {
         }),
       ]),
     ).start();
-  }, [opacity]); // ✅ fixed: opacity eklendi
+  }, [opacity]);
 
   const box = (w: string | number, h: number, r = 8, mb = 0) => (
     <Animated.View
@@ -266,7 +265,7 @@ export default function Questions(): ReactElement {
         useNativeDriver: true,
       }),
     ]).start();
-  }, [shakeAnim]); // ✅ fixed: shakeAnim eklendi
+  }, [shakeAnim]);
 
   // ── Pop animasyonu (doğru cevap) ─────────────────────────────────────────
   const triggerPop = useCallback(() => {
@@ -282,7 +281,7 @@ export default function Questions(): ReactElement {
         useNativeDriver: true,
       }),
     ]).start();
-  }, [scaleAnim]); // ✅ fixed: scaleAnim eklendi
+  }, [scaleAnim]);
 
   // ── Cevap seçimi ─────────────────────────────────────────────────────────
   const handleSelectAnswer = async (optionId: string) => {
@@ -328,11 +327,6 @@ export default function Questions(): ReactElement {
       LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
       const nextIndex = currentQuestion + 1;
       setCurrentQuestion(nextIndex);
-      
-      if ((nextIndex) % 5 === 0) {
-        showInterstitial();
-      }
-      
       await db.saveProgress(
         Number(testId),
         nextIndex,

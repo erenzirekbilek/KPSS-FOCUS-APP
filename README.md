@@ -106,7 +106,11 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 ## 🎬 Proje Videosu
 
-https://youtube.com/shorts/Kd4j2tmHFPc
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+    <img src="./assets/project-video.gif" width="700" />
+  </a>
+</p>
 
 ---
 
