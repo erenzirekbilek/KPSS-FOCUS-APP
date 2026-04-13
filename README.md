@@ -94,6 +94,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 | Sayfa | Görsel |
 | :--- | :--- |
+| Project-Demo | ![Welcome](./assets/images/project-images/project-video.gif) |
 | Welcome | ![Welcome](./assets/images/project-images/Welcome-Page.png) |
 | Ana Sayfa | ![Dashboard](./assets/images/project-images/Dashboard.png) |
 | Konular | ![Subjects](./assets/images/project-images/subjects.png) |
