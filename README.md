@@ -18,6 +18,7 @@
 - [⚙️ Kurulum](#-kurulum)
 - [🚀 Kullanım](#-kullanım)
 - [📸 Proje Görselleri](#-proje-görselleri)
+- [🎬 Proje Videosu](#-proje-videosu)
 - [🤝 Katkıda Bulunma](#-katkıda-bulunma)
 - [📄 Lisans](#-lisans)
 - [📬 İletişim](#-iletişim)
@@ -100,6 +101,12 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 | İstatistikler | ![Stats](./assets/images/project-images/stats.png) |
 | Sorular | ![Questions](./assets/images/project-images/Questions.png) |
 | Eğlence | ![Enjoy](./assets/images/project-images/Enjoy.png) |
+
+---
+
+## 🎬 Proje Videosu
+
+https://github.com/user-attachments/assets/project-images/project-video.mp4
 
 ---
 
