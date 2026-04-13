@@ -26,7 +26,7 @@
 ---
 
 ## ✨ Özellikler
-- ✅ **Pomodoro Sayacı:** 
+✅ **Pomodoro Sayacı:** 
 
 - Sadece bir zamanlayıcı değil, KPSS adaylarının çalışma alışkanlıklarına göre optimize edilmiş bir verimlilik aracıdır.
 
@@ -37,10 +37,29 @@
 - **Bütünleşik Takip:** Pomodoro oturumlarını doğrudan çalışma programınla ilişkilendirerek, hangi dersin başında kaç "pomodoro" (zaman dilimi) harcadığını istatistiksel olarak görebilirsin.
 
 - Kesintisiz Odak Modu: Çalışma süresi boyunca dikkati dağıtacak bildirimleri minimize eden bir yapı ile sınav stresini yönetilebilir parçalara böler.
-- ✅ **Konu Takip Sistemi:** Hangi konudan kaç soru çözüldüğünü ve eksik konuları anlık takip etme.
-- ✅ **İstatistikler & Grafikler:** Günlük, haftalık ve aylık çalışma performansını görselleştirme.
-- ✅ **Hatırlatıcı Bildirimler:** Günlük çalışma hedeflerini unutmamak için akıllı bildirimler.
-- ✅ **Karanlık Mod Desteği:** Gece çalışmalarında göz yormayan arayüz seçeneği.
+
+✅ **Konu Takip Sistemi:**
+
+- **Ders ve Konu Hiyerarşisi:** Güncel ÖSYM müfredatına tam uyumlu; Genel Yetenek, Genel Kültür ve Eğitim Bilimleri derslerini alt konularına kadar detaylıca listeler.
+
+- **Soru Sayacı ve Performans:** Sadece "bitirdim" demek yerine, hangi konudan toplam kaç soru çözdüğünü kaydederek gelişimini rakamlarla görmeni sağlar.
+
+- **Görsel İlerleme Çubukları (Progress Bars):** Her ders için yüzde kaçlık bir tamamlanma oranına sahip olduğunu dinamik grafiklerle takip edebilir, motivasyonunu yüksek tutabilirsin.
+
+Eksik Analizi: Çözülen soru sayıları ve deneme sonuçlarına göre "zayıf" olduğun konuları otomatik olarak belirleyerek, tekrar etmen gereken noktaları hatırlatır.
+
+✅ **İstatistikler & Grafikler:** 
+Çalışma verilerini anlamlı istatistiklere dönüştürerek, adayın kendi gelişimini bir veri bilimci gözüyle incelemesini sağlar.
+
+- **Dinamik Zaman Çizelgeleri:** Günlük, haftalık ve aylık periyotlarda çalışma sürelerini ve çözülen soru sayılarını sütun ve çizgi grafikleriyle görselleştirir.
+
+- **Ders Dağılım Pastası:** Toplam çalışma süresinin hangi derslere (Matematik, Tarih, Coğrafya vb.) harcandığını yüzde olarak göstererek, dengesiz çalışma programlarını tespit etmeyi sağlar.
+
+- **Isı Haritası (Heatmap):** Ay boyunca hangi günlerin daha verimli geçtiğini bir takvim üzerinde "yoğunluk haritası" şeklinde sunarak istikrarı teşvik eder.
+
+- **Kıyaslamalı Analiz:** Geçtiğimiz haftaya veya aya göre performansın ne yönde (artış/azalış) değiştiğini anlık olarak raporlar.
+
+- ✅ **Karanlık Mod Desteği:** Gece çalışmalarında göz yormayan arayüz seçeneği bulunmaktadır.
 
 ---
 
@@ -51,7 +70,7 @@
 | **Framework** | React Native (Expo) |
 | **Dil** | JavaScript / TypeScript |
 | **State Management** | Redux Toolkit / Context API |
-| **Veritabanı & Auth** | Firebase (Firestore & Auth) |
+| **Veritabanı & Auth** | SQL Lite |
 | **UI Kütüphanesi** | React Paper / NativeWind (Tailwind) |
 | **Grafikler** | React Native Chart Kit |
 
