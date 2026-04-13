@@ -15,7 +15,7 @@
 - [🛠 Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
 - [⚙️ Kurulum](#-kurulum)
 - [🚀 Kullanım](#-kullanım)
-- [📸 Ekran Görüntüleri](#-ekran-görüntüleri)
+- [📸 Proje Görselleri](#-proje-görselleri)
 - [🤝 Katkıda Bulunma](#-katkıda-bulunma)
 - [📄 Lisans](#-lisans)
 - [📬 İletişim](#-iletişim)
@@ -56,5 +56,64 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 ### Adımlar
 1. **Depoyu klonlayın:**
    ```bash
-   git clone [https://github.com/kullaniciadi/kpss-focus.git](https://github.com/kullaniciadi/kpss-focus.git)
+   git clone https://github.com/erenkirekbilek/kpss-focus.git
    cd kpss-focus
+   ```
+
+2. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   ```
+
+3. **Uygulamayı başlatın:**
+   ```bash
+   npm start
+   ```
+
+4. **Expo Go ile çalıştırın:**
+   - React Native emulatorunuz varsa: `npm run android` veya `npm run ios`
+   - Mobil cihazda test etmek için Expo Go uygulamasını kullanın
+
+---
+
+## 🚀 Kullanım
+
+1. **Hoş Geldiniz:** Uygulamayı ilk açtığınızda karşınıza hoş geldiniz ekranı çıkar.
+2. **Ana Sayfa:** Pomodoro sayacınız, günlük istatistikleriniz ve hızlı erişim butonları burada yer alır.
+3. **Konular:** KPSS konularınızı ekleyebilir, her konu için soru sayınızı takip edebilirsiniz.
+4. **True-False:** Doğru/Yanlış soru çalışmalarınızı burada yapabilirsiniz.
+5. **İstatistikler:** Performansınızı grafiklerle analiz edebilirsiniz.
+6. **Oyun:** Dinlenme molası için eğlenceli mini oyunlar oynayabilirsiniz.
+
+---
+
+## 📸 Proje Görselleri
+
+| Sayfa | Görsel |
+| :--- | :--- |
+| Welcome | ![Welcome](./assets/images/project-images/Welcome-Page.png) |
+| Ana Sayfa | ![Dashboard](./assets/images/project-images/Dashboard.png) |
+| Konular | ![Subjects](./assets/images/project-images/subjects.png) |
+| True-False | ![True-False](./assets/images/project-images/True-False.png) |
+| İstatistikler | ![Stats](./assets/images/project-images/stats.png) |
+| Sorular | ![Questions](./assets/images/project-images/Questions.png) |
+| Eğlence | ![Enjoy](./assets/images/project-images/Enjoy.png) |
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Katkıda bulunmak isterseniz, lütfen bir "pull request" oluşturun veya "issues" bölümünden bildirin.
+
+---
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](./LICENSE) ile lisanslanmıştır.
+
+---
+
+## 📬 İletişim
+
+- **E-posta:** erenzirekbilek@hotmail.com
+- **GitHub:** [https://github.com/erenkirekbilek/kpss-focus](https://github.com/erenkirekbilek/kpss-focus)

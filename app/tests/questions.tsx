@@ -27,6 +27,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ThemeContext } from "../../context/ThemeContext";
 import { db } from "../../services/database";
 import { playSound, preloadSounds } from "../../utils/soundManager";
+import { showInterstitial } from "../../services/admob";
 
 // Android için LayoutAnimation'ı etkinleştir
 if (
@@ -327,6 +328,11 @@ export default function Questions(): ReactElement {
       LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
       const nextIndex = currentQuestion + 1;
       setCurrentQuestion(nextIndex);
+      
+      if ((nextIndex) % 5 === 0) {
+        showInterstitial();
+      }
+      
       await db.saveProgress(
         Number(testId),
         nextIndex,
