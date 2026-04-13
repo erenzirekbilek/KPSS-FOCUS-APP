@@ -106,7 +106,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 ## 🎬 Proje Videosu
 
-https://github.com/user-attachments/assets/project-images/project-video.mp4
+https://youtube.com/shorts/Kd4j2tmHFPc
 
 ---
 
