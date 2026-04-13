@@ -106,7 +106,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 ## 🎬 Proje Videosu
 
-![GIF Açıklaması](project-video.gif).
+![GIF Açıklaması](./assets/images/project-images/project-video.gif).
 ---
 
 ## 🤝 Katkıda Bulunma
