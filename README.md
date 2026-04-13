@@ -26,7 +26,17 @@
 ---
 
 ## ✨ Özellikler
-- ✅ **Pomodoro Sayacı:** KPSS konularına özel özelleştirilebilir çalışma ve mola süreleri.
+- ✅ **Pomodoro Sayacı:** 
+
+- Sadece bir zamanlayıcı değil, KPSS adaylarının çalışma alışkanlıklarına göre optimize edilmiş bir verimlilik aracıdır.
+
+- **Konu Bazlı Özelleştirme:** Her dersin zorluk seviyesi farklıdır. "Eğitim Bilimleri" için 25 dakikalık standart oturumlar ayarlayabilirken, yoğun "Genel Yetenek - Matematik" çözümleri için süreyi 50 dakikaya kadar esnetebilirsin.
+
+- **Akıllı Mola Yönetimi:** Arka arkaya tamamlanan oturumlar sonrası sistem, zihinsel yorgunluğu önlemek için otomatik olarak "Uzun Mola" önerisinde bulunur.
+
+- **Bütünleşik Takip:** Pomodoro oturumlarını doğrudan çalışma programınla ilişkilendirerek, hangi dersin başında kaç "pomodoro" (zaman dilimi) harcadığını istatistiksel olarak görebilirsin.
+
+- Kesintisiz Odak Modu: Çalışma süresi boyunca dikkati dağıtacak bildirimleri minimize eden bir yapı ile sınav stresini yönetilebilir parçalara böler.
 - ✅ **Konu Takip Sistemi:** Hangi konudan kaç soru çözüldüğünü ve eksik konuları anlık takip etme.
 - ✅ **İstatistikler & Grafikler:** Günlük, haftalık ve aylık çalışma performansını görselleştirme.
 - ✅ **Hatırlatıcı Bildirimler:** Günlük çalışma hedeflerini unutmamak için akıllı bildirimler.
@@ -70,7 +80,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
 
 3. **Uygulamayı başlatın:**
    ```bash
-   npm start
+   npx expo start
    ```
 
 4. **Expo Go ile çalıştırın:**
